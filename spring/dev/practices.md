@@ -9,11 +9,22 @@ Instead of defining an `@ExceptionHandler` on a controller, a better practice ma
 public class ExceptionHandler extends ResponseEntityExceptionHandler { ... }
 ```
 to gain controll over the most general error cases in Spring boot. In this class handlers may defined such as
-```
+```java
 
+@ExceptionHandler(ResourceNotFoundException.class)
+public final ResponseEntity<Object> handleResourceNotFoundException(
+	ResourceNotFoundException ex, WebRequest request) {
+	ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, ex.getMessage());
+	return createResponseEntity(pd, null, HttpStatus.NOT_FOUND, request);
+}
 
+@ExceptionHandler(Exception.class)
+public final ResponseEntity<Object> handleGeneralException(Exception ex, WebRequest request) {
+	ProblemDetail pd = ProblemDetail.forStatusAndDetail(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage());
+	return createResponseEntity(pd, null, HttpStatus.INTERNAL_SERVER_ERROR, request);
+}
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjU0MTAwMCwxNjMyMTYyNDQyXX0=
+eyJoaXN0b3J5IjpbMjA5OTY3OTkxMSwxNjMyMTYyNDQyXX0=
 -->
