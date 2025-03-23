@@ -8,7 +8,9 @@ Instead of defining an `@ExceptionHandler` on a controller, a better practice ma
 @ControllerAdvice
 public class ExceptionHandler extends ResponseEntityExceptionHandler { ... }
 ```
-to gain controll over the most general error cases in Spring boot 
+to gain controll over the most general error cases in Spring boot.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTExMjYxNTksMTYzMjE2MjQ0Ml19
+eyJoaXN0b3J5IjpbLTI1NTM1NTc0NywxNjMyMTYyNDQyXX0=
 -->
