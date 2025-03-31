@@ -11,11 +11,11 @@ Generally `package.json` is the map of a _NodeJS_ based project containing infor
 
 ---
 
-**Package**  is a module containing one or multiple files combined together to represent a specific function f.e. working with dates with _moment_ package.
+**Package**  is a module containing one or multiple files combined together to represent a specific function f.e. working with dates with the _moment_ package.
 **Dependency** is a package that the project relies on and listed in the `package.json` under dependencies (or devDependencies).
-
-Accross so many packages we may only need some. In order to manage dependencies  _NPM_ is used to install the necessary ones to our local environment.
 # Managing packages
+Accross so many packages we may only need some. In order to manage dependencies  _NPM_ is used to install the necessary ones to our local environment.
+
 `npm install`
 `npm uninstall`
 
@@ -73,5 +73,5 @@ For example when running `start` it will automatically run
 ```
 # NPX
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTc3MjE1OTldfQ==
+eyJoaXN0b3J5IjpbLTE1MTY3MDQ2OTJdfQ==
 -->
