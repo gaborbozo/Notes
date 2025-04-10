@@ -6,7 +6,7 @@ After this there was a shift to service-based architectures (_SOA_), which decom
 * the aggregation layer got tightly coupled to domain-, data access- and presentation layer logics.
 
 Microservices also have their of set of problems, but they do however <u>have the promise of a more agile framework that can be extended into a cloud native world</u> much easire than its peers before.
-# Microservices and cloud-native
+## Microservices and cloud-native
 Cloud native includes patterns for designing systems to run in a cloud-based infrastrucutre. Cloud computing is a pattern of globally distributing systems to provide increased uptime, increased scalability and increased distribution. 
 
 Microservices tends to fit good in this concept, however in reality they differ, but in generally every microservice based application is aimed to a cloud native platform.
@@ -42,7 +42,7 @@ Forwarding requests without altering them - transformation should be handled els
 
 Clients interact with a unified interface, not with individual microservices directly, this decouples clients from internal changes, which makes it easier to scale services independently and handle infrastructure changes (like changing IPs, ports, or data centers) without impacting clients.
 ## Asynchronous communication
-Strategy for dealing with reducing latency on a microservices based system is to not rely on a purely synchronous communication model.
+Strategy for dealing with reducing latency on a microservices based system is to not rely on a purely synchronous communication model (such as _REST API_-s).
 
 Most often is is reffered to event-driven microservices as a way to support eventual consistency of the data.
 > For example a message service put data into an asynchronous message broker (message queue) or a temporary data store, and then drive events from this state change.
@@ -104,5 +104,5 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2MDg0NTg1LDIwNDU3NzU0NDJdfQ==
+eyJoaXN0b3J5IjpbNjcxMzk5NjQ2LDIwNDU3NzU0NDJdfQ==
 -->
