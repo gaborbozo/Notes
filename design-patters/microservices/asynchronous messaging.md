@@ -27,6 +27,7 @@ Important that after the producer creates the message, dispatches it, and goes o
 
 Any kind of reponse is usually another point-to-point message.
 ### Publish-subscribe pattern
+Single producer creates a message and puts it into the message broker. Mulconsumer responds or listens to the message and does some action on it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDIyMTI2NCwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbOTI3OTU0NTUwLC0yMDY3Mjc1Mzc4XX0=
 -->
