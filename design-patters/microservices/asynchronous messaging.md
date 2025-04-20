@@ -29,8 +29,10 @@ Any kind of reponse is usually another point-to-point message.
 ### Publish-subscribe pattern
 Single producer - multiple consumer.
 
+TODO TODO TODO TODO TODO TODO
 
+Once again, we usually have a single producer who creates the message and dispatches it to the message broker. However, in this model, there is one or more subscribers who listen for messages and act on their own accord. The distinction here is you can have multiple consumers of the same message, which is why this becomes a little less common in a microservices architecture, as we don't often find ourselves broadcasting a message to many different services in the exact same format. Once again, however, it is a send and forget model where the producer isn't waiting on any kind of response before continuing its work. In this model, there is also a concept of a durable subscription. In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the subscriber is durable, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription. But it is very critical when messages must be acted on, even if the processes have been terminated in the system.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNj
-cyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00ND
+A1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
 -->
