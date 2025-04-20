@@ -14,15 +14,12 @@ Routing can range from simple point-to-point to complex message inspection and f
 These components are a great source for handling and responding errors.
 
 RabbitMQ, Apache ActiveMQ, Java Message Services, Apache Kafka, Cache.
-### Terms
+## Terms
 **Producer** creates message for another system to act on. It builds the message in the correct format (based on a contract) and dispatches it to the message broker. Once the message is sent, the producer usually confirms acceptance and ends the process.
 **Consumer** (or receiver) is the system that receives messages from the message broker. While there are various ways this can happen, the core responsibility of the consumer is to act on the message. After processing, it may either do nothing further (in simple workflows), or it may send a new message — either to another system downstream or back to the original sender, often as a response or callback.
 **Dead-letter queue** is a special palce in a message broker where error messages go, error such as format issues, timeouts, the queue being so backed up that it cannot accept the message.
-### Point-to-point pattern
-```mermaid
-Graph LR
-
-
+## Interservice communication patterns
+### Point-to-point
 These calls can replace traditional restful calls between services, where the response is not needed or can be received in and out of band process. 
 
 Single producer creates a message and puts it into the message broker. Single consumer responds or listens to the message and does some action on it.
@@ -38,7 +35,7 @@ It is used when
 * out of band processes, f.e. email sending
 * scaling the real blocking calls
 
-### Publish-subscribe pattern
+### Publish-subscribe
 Single producer - multiple consumer.
 
 Send and forget.
@@ -46,7 +43,7 @@ Send and forget.
 
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTQ0NTA2MywtMTk0MzM0NzQ5NiwtMT
-MzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3
-NTM3OF19
+eyJoaXN0b3J5IjpbLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLT
+EzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcy
+NzUzNzhdfQ==
 -->
