@@ -31,7 +31,7 @@ message.
 It is used when
 * no response needed, f.e. audit records,
 * admin tasks such as clean up processes,
-* 
+* out of band processes, 
 
 ### Publish-subscribe pattern
 Single producer - multiple consumer.
@@ -41,6 +41,7 @@ Send and forget.
 
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNz
-A3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbLTE1NjE2NjExMDUsLTE5NDMzNDc0OTYsLT
+EzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcy
+NzUzNzhdfQ==
 -->
