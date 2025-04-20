@@ -29,8 +29,11 @@ Any kind of reponse is usually another point-to-point message.
 ### Publish-subscribe pattern
 Single producer - multiple consumer.
 
-It is a send and forget model where the producer isn't waiting on any kind of response before continuing its work. In this model, there is also a concept of a durable subscription. In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the subscriber is durable, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription. But it is very critical when messages must be acted on, even if the processes have been terminated in the system.
+Send and forget.
+
+
+In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzA3OTk2MiwtMTMzODAwNTg4OCw3MD
+eyJoaXN0b3J5IjpbLTMyODQ4MDkzMCwtMTMzODAwNTg4OCw3MD
 cyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
 -->
