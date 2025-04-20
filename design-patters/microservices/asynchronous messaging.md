@@ -23,14 +23,14 @@ These calls can replace traditional restful calls between services, where the re
 
 Single producer creates a message and puts it into the message broker. Single consumer responds or listens to the message and does some action on it.
 
-Important that after the producer creates the message, dispatches it, and goes on.
+**Send and forget** means that after the producer creates the message, it dispatches the message, and goes on.
 
 Any kind of reponse is usually another point-to-point message.
 ### Publish-subscribe pattern
 Single producer - multiple consumer.
 
- Once again, however, it is a send and forget model where the producer isn't waiting on any kind of response before continuing its work. In this model, there is also a concept of a durable subscription. In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the subscriber is durable, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription. But it is very critical when messages must be acted on, even if the processes have been terminated in the system.
+It is a send and forget model where the producer isn't waiting on any kind of response before continuing its work. In this model, there is also a concept of a durable subscription. In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the subscriber is durable, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription. But it is very critical when messages must be acted on, even if the processes have been terminated in the system.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQxODM1NDIzLC0xMzM4MDA1ODg4LDcwNz
-I3Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbMTI3NzA3OTk2MiwtMTMzODAwNTg4OCw3MD
+cyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
 -->
