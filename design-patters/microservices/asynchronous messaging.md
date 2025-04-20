@@ -22,7 +22,7 @@ RabbitMQ, Apache ActiveMQ, Java Message Services, Apache Kafka, Cache.
 ### Point-to-point
 These calls can replace traditional restful calls between services, where the response is not needed or can be received in and out of band process. 
 
-Single producer creates a message and puts it into the message broker. Single consumer responds or listens to the message and does some action on it.
+Single producer creates a message and puts it into the message broker. Single consumer responds or listens (polls) to the message and does some action on it.
 
 **Send and forget** means that after the producer creates the message, it dispatches the message, and goes on.
 
@@ -43,7 +43,7 @@ Send and forget.
 
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLT
-EzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcy
-NzUzNzhdfQ==
+eyJoaXN0b3J5IjpbMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMT
+k0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3
+NTE2NiwtMjA2NzI3NTM3OF19
 -->
