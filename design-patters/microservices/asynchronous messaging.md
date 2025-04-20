@@ -25,7 +25,14 @@ Single producer creates a message and puts it into the message broker. Single co
 
 **Send and forget** means that after the producer creates the message, it dispatches the message, and goes on.
 
-Any kind of reponse is usually another point-to-point message.
+Any kind of reponse is usually another point-to-point 
+message.
+
+It is used when
+* no response needed, f.e. audit records,
+* admin tasks such as clean up processes,
+* 
+
 ### Publish-subscribe pattern
 Single producer - multiple consumer.
 
@@ -34,6 +41,6 @@ Send and forget.
 
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODQ4MDkzMCwtMTMzODAwNTg4OCw3MD
-cyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNz
+A3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
 -->
