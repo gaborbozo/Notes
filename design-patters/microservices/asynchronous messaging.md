@@ -81,10 +81,12 @@ Designed to handle continuous flows of data, typically from structured logs repr
 
 This setup enables real-time data collection, aggregation, and analysis, supporting use cases like system monitoring, anomaly detection, and business intelligence. Despite added complexity and storage demands, stream data platforms are critical because data drives informed decisions, helps optimize resources, and ensures system reliability and responsiveness.
 ### Log aggregation
-
+Two phases of log aggregation exist
+* raw aggregation via the message broker (e.g., Kafka), which stores logs without transformations to preserve metadata,
+* transformed aggregation in consumption engines, where logs are formatted for readability and analysis.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0OTE3OTc5LDExMTkxNTA5MTAsNDQxNT
+eyJoaXN0b3J5IjpbNjEyNjIxOTUxLDExMTkxNTA5MTAsNDQxNT
 A2MDY0LC0zNDg4Nzg2NzUsMTE2NzkzNjM4MCwtMTMxNjUwNjg5
 MywtMTUwNjAyNjQ2NSw2NzI5NzUwOTEsMTMxNDIwODYxMiwxMj
 Q5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgx
