@@ -102,12 +102,18 @@ Async messaging helps propagate changes efficiently across systems.
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models.
 Frequently used in microservices to decouple data operations.
+### Data migrations
+Moving data between systems or databases is a common and complex task.
+Async patterns allow these migrations to happen smoothly and reliably.
+### Data synchronization between systems
+Perhaps the biggest pain point.
+Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTkzNzQ4MiwtMTU3Mjg5MDUxMSwxMT
-E5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYz
-ODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLD
-EzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5
-NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0Mz
-EsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00
-NDA1NzUxNjZdfQ==
+eyJoaXN0b3J5IjpbLTIwNzA0MzEwOTYsLTE1NzI4OTA1MTEsMT
+ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
+MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
+wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
+OTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3ND
+MxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwt
+NDQwNTc1MTY2XX0=
 -->
