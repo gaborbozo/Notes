@@ -65,13 +65,16 @@ Use cases can be
 * distributed systems with independent teams react to the same event without direct coordination. Prevents tight coupling and supports diverse tools, languages, and processes,
 * alternative cascades where an event may trigger multiple follow-up steps in parallel or conditionally. Choreography avoids complex and messy orchestration logic
 ### Orchestrated
+Events rely on a centralized orchestrator that controls the sequence of steps in a process. Since the steps are usually known in advance, the orchestrator can invoke them as needed and pull results asynchronously from services or a state store. Each step remains isolated and independent, without needing awareness of the others.
 
+Use cases can be
+* 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1ODk2ODY2LC0xNTA2MDI2NDY1LDY3Mj
-k3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEz
-LDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xND
-QwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3
-Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbLTEyNDk5NjMwNTksLTE1MDYwMjY0NjUsNj
+cyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMw
+MTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLT
+E0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3
+MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
 -->
