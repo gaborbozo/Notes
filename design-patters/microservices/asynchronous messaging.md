@@ -50,9 +50,11 @@ In traditional pub-sub, if a subscriber isn't there, it won't get the message. H
 Use cases can be
 * multiple responds, f.e. a user delete event may need that a user data cleanup, logging in audit service, email revocation in a mail system, etc. need to be done,
 * multiple chaining tasks, such as writing to different databases, update search indexes, trigger alerts or downstream processes, etc
+## Event-driven microservices
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwMjIzNjM5LDEyNDkwMTkwMDMsNTc0MT
-AzMDEzLDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0
-LC0xNDQwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LD
-cwNzI3Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3ND
+EwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3
+NCwtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OC
+w3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
 -->
