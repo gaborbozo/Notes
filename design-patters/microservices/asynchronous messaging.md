@@ -51,10 +51,11 @@ Use cases can be
 * multiple responds, f.e. a user delete event may need that a user data cleanup, logging in audit service, email revocation in a mail system, etc. need to be done,
 * multiple chaining tasks, such as writing to different databases, update search indexes, trigger alerts or downstream processes, etc
 ## Event-driven microservices
-
+On or more step based on an invocation from an event.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3ND
-EwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3
-NCwtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OC
-w3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OT
+AxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2
+LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLT
+EzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcy
+NzUzNzhdfQ==
 -->
