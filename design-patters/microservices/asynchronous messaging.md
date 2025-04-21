@@ -53,12 +53,12 @@ Use cases can be
 ## Event-driven microservices
 On or more step based on an invocation from an event.
 ### Choreographed
-Call tree, each step does some work and passes a message down the change. There is no centralized controller of the choreographed events.
-> Similar to _Linux_ based pipel
+Call tree, each step does some work and passes a message or the current state of an object down the change. There is no centralized controller of the choreographed events.
+> Similar to _Linux_ based pipeing: `process1 | process2 | process3`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1MzY0Mzc0LDY3Mjk3NTA5MSwxMzE0Mj
-A4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywt
-MTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOT
-QzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1
-MTY2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbMTIyOTQ5ODUwNCw2NzI5NzUwOTEsMTMxND
+IwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMs
+LTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMT
+k0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3
+NTE2NiwtMjA2NzI3NTM3OF19
 -->
