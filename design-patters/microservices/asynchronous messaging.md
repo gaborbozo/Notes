@@ -64,12 +64,14 @@ It's benefires are
 Use cases can be
 * distributed systems with independent teams react to the same event without direct coordination. Prevents tight coupling and supports diverse tools, languages, and processes,
 * alternative cascades where an event may trigger multiple follow-up steps in parallel or conditionally. Choreography avoids complex and messy orchestration logic
+### Orchestrated
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNDE4NDg4NywtMTUwNjAyNjQ2NSw2Nz
-I5NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAx
-Myw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMT
-Q0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcy
-NzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbMjE1ODk2ODY2LC0xNTA2MDI2NDY1LDY3Mj
+k3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEz
+LDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xND
+QwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3
+Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
 -->
