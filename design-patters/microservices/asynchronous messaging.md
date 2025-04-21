@@ -100,7 +100,7 @@ Data is hard, necessary, and slow (due to factors like network calls, disk IO, a
 Useful in systems with multiple or globally distributed databases.
 Async messaging helps propagate changes efficiently across systems.
 
-While _ACID_ ensures strong 
+While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models.
 Frequently used in microservices to decouple data operations.
@@ -111,7 +111,7 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzkzMTQwNTIsLTE1NzI4OTA1MTEsMT
+eyJoaXN0b3J5IjpbLTExMjUwNTE4NzgsLTE1NzI4OTA1MTEsMT
 ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
 MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
 wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
