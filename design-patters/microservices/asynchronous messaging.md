@@ -68,11 +68,12 @@ Use cases can be
 Events rely on a centralized orchestrator that controls the sequence of steps in a process. Since the steps are usually known in advance, the orchestrator can invoke them as needed and pull results asynchronously from services or a state store. Each step remains isolated and independent, without needing awareness of the others.
 
 Use cases can be
-* 
+* sequential processing where steps must happen in order, e.g. get credit score before approval,
+* command workflows where each step depends on the previous one and messages are non-blocking
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDk5NjMwNTksLTE1MDYwMjY0NjUsNj
+eyJoaXN0b3J5IjpbLTEyODE2NTU4NjcsLTE1MDYwMjY0NjUsNj
 cyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMw
 MTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLT
 E0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3
