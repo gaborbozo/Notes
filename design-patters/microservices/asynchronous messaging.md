@@ -74,12 +74,13 @@ Use cases can be
 
 It's highly reliable, centralized error handling and improved observability, but on the other hand it performs lower than 
 choreography, has higher complexity and cost due to the need for state management and robust orchestrator logic.
-
+### Hybrid events
+Combination of Choreographed and Orchestrated events.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NzkzNjM4MCwtMTMxNjUwNjg5MywtMT
-UwNjAyNjQ2NSw2NzI5NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5
-MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMT
-U0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMz
-ODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NT
-M3OF19
+eyJoaXN0b3J5IjpbLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMz
+E2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4
+NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMT
+k2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQz
+MzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MT
+Y2LC0yMDY3Mjc1Mzc4XX0=
 -->
