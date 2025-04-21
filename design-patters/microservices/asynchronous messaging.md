@@ -90,14 +90,17 @@ Visualization is critical to help filtering logs by metadata and improve human r
 After logs are aggregated, the next step is performing analytical exercises. While aggregation telling us what happend, the analytics will tell that why it happened.
 
 Stream data platform is ideal for analytics because
-* data from multiple services comes together (real-time context)Faster insights: No delay from ETL-ing to a warehouse. 🚀 Event triggering: Analytics can lead directly to automated system responses.
+* data from multiple services comes together (real-time context), also warehouses often requires deno
+  > Stream analytics lets us analyze in motion, not just after the fact.
+* has no delay from ETL-ing to a warehouse,
+* analytics can lead directly to automated system responses (event triggering).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTkyNDAyMzYsLTE1NzI4OTA1MTEsMT
-ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
-MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
-wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
-OTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3ND
-MxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwt
-NDQwNTc1MTY2XX0=
+eyJoaXN0b3J5IjpbMzA1MjU5MTEwLC0xNTcyODkwNTExLDExMT
+kxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMTE2NzkzNjM4
+MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5NzUwOTEsMT
+MxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1
+MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMS
+wtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0
+MDU3NTE2Nl19
 -->
