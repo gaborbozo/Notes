@@ -94,13 +94,14 @@ Stream data platform is ideal for analytics because
   > Stream analytics lets us analyze in motion, not just after the fact.
 * has no delay from ETL-ing to a warehouse,
 * analytics can lead directly to automated system responses (event triggering).
-#
+## Data flows
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg1NTU3MzcsLTE1NzI4OTA1MTEsMT
-ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
-MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
-wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
-OTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3ND
-MxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwt
-NDQwNTc1MTY2XX0=
+eyJoaXN0b3J5IjpbOTkyMDE0MDI1LC0xNTcyODkwNTExLDExMT
+kxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMTE2NzkzNjM4
+MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5NzUwOTEsMT
+MxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1
+MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMS
+wtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0
+MDU3NTE2Nl19
 -->
