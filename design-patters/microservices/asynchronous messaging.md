@@ -95,9 +95,10 @@ Stream data platform is ideal for analytics because
 * has no delay from ETL-ing to a warehouse,
 * analytics can lead directly to automated system responses (event triggering).
 ## Data flows
-Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). Despite efforts like NoSQL optimizations and in-memory caching, storing and accessing data is still a bottleneck. 
+Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). To deal with this, asynchronous messaging supports several critical patterns.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2Mjg5NTA2NCwtMTU3Mjg5MDUxMSwxMT
+eyJoaXN0b3J5IjpbMTQ5NzQ3NTM3OCwtMTU3Mjg5MDUxMSwxMT
 E5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYz
 ODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLD
 EzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5
