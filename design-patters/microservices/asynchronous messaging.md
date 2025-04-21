@@ -94,12 +94,10 @@ Stream data platform is ideal for analytics because
   > Stream analytics lets us analyze in motion, not just after the fact.
 * has no delay from ETL-ing to a warehouse,
 * analytics can lead directly to automated system responses (event triggering).
-### Event detection
-Use cases for eventing are broad, ranging from detecting bad behavior (e.g., attacks or operational issues) to triggering positive system responses.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0Njk1MjQxNywtMTU3Mjg5MDUxMSwxMT
+eyJoaXN0b3J5IjpbMTg1NTk4NDIxNiwtMTU3Mjg5MDUxMSwxMT
 E5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYz
 ODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLD
 EzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5
