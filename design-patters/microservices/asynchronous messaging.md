@@ -52,10 +52,13 @@ Use cases can be
 * multiple chaining tasks, such as writing to different databases, update search indexes, trigger alerts or downstream processes, etc
 ## Event-driven microservices
 On or more step based on an invocation from an event.
+### Choreographed
+Call tree, each step does some work and passes a message down the change. There is no centralized controller of the choreographed events.
+> Similar to _Linux_ based pipel
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OT
-AxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2
-LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLT
-EzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcy
-NzUzNzhdfQ==
+eyJoaXN0b3J5IjpbMzY1MzY0Mzc0LDY3Mjk3NTA5MSwxMzE0Mj
+A4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywt
+MTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOT
+QzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1
+MTY2LC0yMDY3Mjc1Mzc4XX0=
 -->
