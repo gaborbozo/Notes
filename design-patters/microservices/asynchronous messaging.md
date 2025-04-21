@@ -57,11 +57,11 @@ Call tree, each step does some work and passes a message or the current state of
 > Similar to _Linux_ based pipeing: `process1 | process2 | process3`
 
 Use cases can be
-* distinct systems where 
+* distributed systems with independent teams react to the same event without direct coordination
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDQ0NDc0NCw2NzI5NzUwOTEsMTMxND
-IwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMs
-LTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMT
-k0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3
-NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbNDY5MjA3NzAzLDY3Mjk3NTA5MSwxMzE0Mj
+A4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywt
+MTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOT
+QzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1
+MTY2LC0yMDY3Mjc1Mzc4XX0=
 -->
