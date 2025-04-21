@@ -77,13 +77,17 @@ choreography, has higher complexity and cost due to the need for state managemen
 ### Hybrid events
 Combination of Choreographed and Orchestrated events.
 ## Stream data platform
+Designed to handle continuous flows of data, typically from structured logs representing system events. It operates asynchronously and uses persistent message brokers like Apache Kafka, following a pub/sub model with producers (e.g., applications, databases, servers) and consumers (e.g., log aggregators, analytics engines, long-term storage systems, and eventing engines).
+
+This setup enables real-time data collection, aggregation, and analysis, supporting use cases like system monitoring, anomaly detection, and business intelligence. Despite added complexity and storage demands, stream data platforms are critical because data drives informed decisions, helps optimize resources, and ensures system reliability and responsiveness.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTE1MDkxMCw0NDE1MDYwNjQsLTM0OD
-g3ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2
-NDY1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNT
-c0MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAz
-OTc0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1OD
-g4LDcwNzI3Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
-
+eyJoaXN0b3J5IjpbLTE2ODc3ODgxMzQsMTExOTE1MDkxMCw0ND
+E1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2
+ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLD
+EyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0
+ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3ND
+k2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MTY2LC0y
+MDY3Mjc1Mzc4XX0=
 -->
