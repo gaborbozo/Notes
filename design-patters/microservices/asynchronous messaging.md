@@ -77,20 +77,20 @@ choreography, has higher complexity and cost due to the need for state managemen
 ### Hybrid events
 Combination of Choreographed and Orchestrated events.
 ## Stream data platform
-Designed to handle continuous flows of data, typically from structured logs representing system events. It operates asynchronously and uses persistent message brokers like Apache Kafka, following a pub/sub model with producers (e.g., applications, databases, servers) and consumers (e.g., log aggregators, analytics engines, long-term storage systems, and eventing engines).
+Designed to handle continuous flows of data, typically from structured logs representing system events. It operates asynchronously and uses persistent message brokers like _Apache Kafka_, following a _pub/sub_ model with producers (e.g., applications, databases, servers) and consumers (e.g., log aggregators, analytics engines, long-term storage systems, and eventing engines).
 
 This setup enables real-time data collection, aggregation, and analysis, supporting use cases like system monitoring, anomaly detection, and business intelligence. Despite added complexity and storage demands, stream data platforms are critical because data drives informed decisions, helps optimize resources, and ensures system reliability and responsiveness.
 ### Log aggregation
 Two phases of log aggregation exist
-* raw aggregation via the message broker (e.g., Kafka), which stores logs without transformations to preserve metadata,
-* transformed aggregation in consumption engines, where logs are formatted for readability and analysis. This transformation tipically happens after the messa
+* raw aggregation via the message broker (e.g., _Kafka_), which stores logs without transformations to preserve metadata,
+* transformed aggregation in consumption engines, where logs are formatted for readability and analysis. This transformation tipically happens after the message broker stage, often during shipping to tools like the _Elastic ELK Stack_.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjI5MjAxMjgsMTExOTE1MDkxMCw0ND
-E1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2
-ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLD
-EyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0
-ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3ND
-k2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MTY2LC0y
-MDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbMTQwOTcwNjA0NywxMTE5MTUwOTEwLDQ0MT
+UwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4
+OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMT
+I0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4
+MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OT
+YsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIw
+NjcyNzUzNzhdfQ==
 -->
