@@ -72,14 +72,14 @@ Use cases can be
 * command workflows where each step depends on the previous one and messages are non-blocking,
 * response aggregation when multiple steps require responses, the orchestrator collects and compiles them into a master status.
 
-It
-
+It's highly reliable, centralized error handling and improved observability, but on the other hand it performs lower than 
+choreography, has higher complexity and cost due to the need for state management and robust orchestrator logic.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTIxMjQyNDEsLTEzMTY1MDY4OTMsLT
-E1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAx
-OTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LD
-E1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEz
-MzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNz
-UzNzhdfQ==
+eyJoaXN0b3J5IjpbMTE2NzkzNjM4MCwtMTMxNjUwNjg5MywtMT
+UwNjAyNjQ2NSw2NzI5NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5
+MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMT
+U0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMz
+ODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NT
+M3OF19
 -->
