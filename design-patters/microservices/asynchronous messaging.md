@@ -49,10 +49,11 @@ In traditional pub-sub, if a subscriber isn't there, it won't get the message. H
 
 Use cases can be
 * multiple responds, f.e. a user delete event may need that a user data cleanup, logging in audit service, email revocation in a mail system, etc. need to be done
-* multiple tasks
+* multiple tasks 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3Mz
-I5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0
-MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC
-00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbLTE4MDExNDA5NjcsMTI0OTAxOTAwMyw1Nz
+QxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5
+NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4OD
+gsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+
 -->
