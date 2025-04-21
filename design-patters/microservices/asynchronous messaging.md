@@ -46,8 +46,13 @@ Single producer - multiple consumer.
 Send and forget.
 
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
+
+Use cases can be
+* multiple responds,
+* multiple tasks
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMT
-Q0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcy
-NzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1ND
+M1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgw
+MDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNz
+hdfQ==
 -->
