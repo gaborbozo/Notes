@@ -80,14 +80,15 @@ Combination of Choreographed and Orchestrated events.
 Designed to handle continuous flows of data, typically from structured logs representing system events. It operates asynchronously and uses persistent message brokers like Apache Kafka, following a pub/sub model with producers (e.g., applications, databases, servers) and consumers (e.g., log aggregators, analytics engines, long-term storage systems, and eventing engines).
 
 This setup enables real-time data collection, aggregation, and analysis, supporting use cases like system monitoring, anomaly detection, and business intelligence. Despite added complexity and storage demands, stream data platforms are critical because data drives informed decisions, helps optimize resources, and ensures system reliability and responsiveness.
+### Log aggregation
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc3ODgxMzQsMTExOTE1MDkxMCw0ND
-E1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2
-ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLD
-EyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0
-ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3ND
-k2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MTY2LC0y
-MDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbMzM0OTE3OTc5LDExMTkxNTA5MTAsNDQxNT
+A2MDY0LC0zNDg4Nzg2NzUsMTE2NzkzNjM4MCwtMTMxNjUwNjg5
+MywtMTUwNjAyNjQ2NSw2NzI5NzUwOTEsMTMxNDIwODYxMiwxMj
+Q5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMsLTE5NjcyNDgx
+MzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5Ni
+wtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3NTE2NiwtMjA2
+NzI3NTM3OF19
 -->
