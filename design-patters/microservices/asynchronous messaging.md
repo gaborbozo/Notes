@@ -48,12 +48,11 @@ Send and forget.
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again (based on this a durable subsriber must unsubsribe in order to avoid message keeping by the broker). This is a specific registration process that allows this durable subscription. Unlike point-to-point consumer can choose to listen or not listen, which allows for **dynamic expansion**.
 
 Use cases can be
-* multiple responds, f.e. a user delete event may need that a user data cleanup, logging in audit service, email revocation in a mail system, etc. need to be done
-* multiple tasks 
+* multiple responds, f.e. a user delete event may need that a user data cleanup, logging in audit service, email revocation in a mail system, etc. need to be done,
+* multiple chaining tasks, such as writing to different databases, update search indexes, trigger alerts or downstream processes, etc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDExNDA5NjcsMTI0OTAxOTAwMyw1Nz
-QxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5
-NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4OD
-gsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
-
+eyJoaXN0b3J5IjpbOTAwMjIzNjM5LDEyNDkwMTkwMDMsNTc0MT
+AzMDEzLDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0
+LC0xNDQwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LD
+cwNzI3Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
 -->
