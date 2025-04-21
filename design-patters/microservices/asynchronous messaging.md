@@ -87,14 +87,14 @@ Two phases of log aggregation exist
 
 Visualization is critical to help filtering logs by metadata and improve human readibility. Also enables better operational insights, debugging, and system health checks. Essential for refactoring analysis, even in non-production environments.
 ### System analytics
-After logs are aggregated, the next step is performing analytical exercises.
+After logs are aggregated, the next step is performing analytical exercises. In the context of aggregation that telling us what happend, th
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzI4OTA1MTEsMTExOTE1MDkxMCw0ND
-E1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2
-ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLD
-EyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0
-ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3ND
-k2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MTY2LC0y
-MDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbLTExODE5NDc3MDEsLTE1NzI4OTA1MTEsMT
+ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
+MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
+wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
+OTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3ND
+MxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwt
+NDQwNTc1MTY2XX0=
 -->
