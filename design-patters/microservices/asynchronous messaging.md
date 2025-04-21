@@ -57,11 +57,14 @@ Call tree, each step does some work and passes a message or the current state of
 > Similar to _Linux_ based pipeing: `process1 | process2 | process3`
 
 Use cases can be
-* distributed systems with independent teams react to the same event without direct coordination
+* distributed systems with independent teams react to the same event without direct coordination. Prevents tight coupling and supports diverse tools, languages, and processes,
+* alternative cascades where an event may trigger multiple follow-up steps in parallel or conditionally. Choreography avoids complex and messy orchestration logic
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MjA3NzAzLDY3Mjk3NTA5MSwxMzE0Mj
-A4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywt
-MTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOT
-QzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1
-MTY2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbLTE1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMT
+QyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAz
+LC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLT
+E5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1
+NzUxNjYsLTIwNjcyNzUzNzhdfQ==
 -->
