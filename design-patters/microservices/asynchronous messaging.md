@@ -56,11 +56,12 @@ On or more step based on an invocation from an event.
 Call tree, each step does some work and passes a message or the current state of an object down the change. There is no centralized controller of the choreographed events.
 > Similar to _Linux_ based pipeing: `process1 | process2 | process3`
 
-Use cases can b
+Use cases can be
+* distinct systems where 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzAwMzg4NjAsNjcyOTc1MDkxLDEzMT
-QyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAz
-LC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLT
-E5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1
-NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbMTM5MDQ0NDc0NCw2NzI5NzUwOTEsMTMxND
+IwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMyw0MjczMjk1MDMs
+LTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMT
+k0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3
+NTE2NiwtMjA2NzI3NTM3OF19
 -->
