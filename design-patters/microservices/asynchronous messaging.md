@@ -33,12 +33,12 @@ It is used when
 * no response needed, f.e. audit records,
 * admin tasks such as clean up processes,
 * out of band processes, f.e. email sending,
-* scaling the real blocking calls
+* scaling the real blocking calls.
 
 Considetarions such as
 * message acknowledgment determines when the broker removes the message,
 * Dead-letter queues (DLQ) should be monitored and managed properly,
-* Wire time and setup overhead may outweigh benefits if the message processing is trivial
+* Wire time and setup overhead may outweigh benefits if the message processing is trivial.
 
 ### Publish-subscribe
 Single producer - multiple consumer.
@@ -59,24 +59,27 @@ It's benefires are
 * there is no centralized controller of the choreographed events,
   > Similar to _Linux_ based pipeing: `process1 | process2 | process3`
 * each step can be optimized for its sole function,
-* reduced reliability, lower complexity and cost
+* reduced reliability, lower complexity and cost.
 
 Use cases can be
 * distributed systems with independent teams react to the same event without direct coordination. Prevents tight coupling and supports diverse tools, languages, and processes,
-* alternative cascades where an event may trigger multiple follow-up steps in parallel or conditionally. Choreography avoids complex and messy orchestration logic
+* alternative cascades where an event may trigger multiple follow-up steps in parallel or conditionally. Choreography avoids complex and messy orchestration logic.
 ### Orchestrated
 Events rely on a centralized orchestrator that controls the sequence of steps in a process. Since the steps are usually known in advance, the orchestrator can invoke them as needed and pull results asynchronously from services or a state store. Each step remains isolated and independent, without needing awareness of the others.
 
 Use cases can be
 * sequential processing where steps must happen in order, e.g. get credit score before approval,
 * command workflows where each step depends on the previous one and messages are non-blocking,
-* 
+* response aggregation when multiple steps require responses, the orchestrator collects and compiles them into a master status.
+
+It
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNj
-cyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMw
-MTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLT
-E0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3
-MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbLTE2NTIxMjQyNDEsLTEzMTY1MDY4OTMsLT
+E1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAx
+OTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LD
+E1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEz
+MzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1NzUxNjYsLTIwNjcyNz
+UzNzhdfQ==
 -->
