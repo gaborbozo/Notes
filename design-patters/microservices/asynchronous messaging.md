@@ -53,8 +53,12 @@ Use cases can be
 ## Event-driven microservices
 On or more step based on an invocation from an event.
 ### Choreographed
-Call tree, each step does some work and passes a message or the current state of an object down the change. There is no centralized controller of the choreographed events.
-> Similar to _Linux_ based pipeing: `process1 | process2 | process3`
+Call tree, each step does some work and passes a message or the current state of an object down the change (sends data to the message broker). 
+
+It's benefires are
+* there is no centralized controller of the choreographed events.
+  > Similar to _Linux_ based pipeing: `process1 | process2 | process3`
+* 
 
 Use cases can be
 * distributed systems with independent teams react to the same event without direct coordination. Prevents tight coupling and supports diverse tools, languages, and processes,
@@ -62,9 +66,9 @@ Use cases can be
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMT
-QyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAz
-LC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLT
-E5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNzQ1LC00NDA1
-NzUxNjYsLTIwNjcyNzUzNzhdfQ==
+eyJoaXN0b3J5IjpbOTgyMTI4OTEzLC0xNTA2MDI2NDY1LDY3Mj
+k3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEz
+LDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xND
+QwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3
+Mjc0NSwtNDQwNTc1MTY2LC0yMDY3Mjc1Mzc4XX0=
 -->
