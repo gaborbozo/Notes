@@ -87,10 +87,13 @@ Two phases of log aggregation exist
 
 Visualization is critical to help filtering logs by metadata and improve human readibility. Also enables better operational insights, debugging, and system health checks. Essential for refactoring analysis, even in non-production environments.
 ### System analytics
-After logs are aggregated, the next step is performing analytical exercises. In the context of aggregation that telling us what happend, th
+After logs are aggregated, the next step is performing analytical exercises. While aggregation telling us what happend, the analytics will tell that why it happened.
+
+Stream data platform is ideal for analytics because
+* data from multiple services comes together (real-time context)Faster insights: No delay from ETL-ing to a warehouse. 🚀 Event triggering: Analytics can lead directly to automated system responses.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODE5NDc3MDEsLTE1NzI4OTA1MTEsMT
+eyJoaXN0b3J5IjpbLTE2OTkyNDAyMzYsLTE1NzI4OTA1MTEsMT
 ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
 MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
 wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
