@@ -76,11 +76,12 @@ It's highly reliable, centralized error handling and improved observability, but
 choreography, has higher complexity and cost due to the need for state management and robust orchestrator logic.
 ### Hybrid events
 Combination of Choreographed and Orchestrated events.
+#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMz
-E2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4
-NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMT
-k2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3NDMxLC0xOTQz
-MzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwtNDQwNTc1MT
-Y2LC0yMDY3Mjc1Mzc4XX0=
+eyJoaXN0b3J5IjpbLTM5NzM2MTcwNiwtMzQ4ODc4Njc1LDExNj
+c5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcyOTc1
+MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsND
+I3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAx
+NTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgsNzA3MjcyNz
+Q1LC00NDA1NzUxNjYsLTIwNjcyNzUzNzhdfQ==
 -->
