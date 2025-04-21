@@ -85,8 +85,9 @@ Two phases of log aggregation exist
 * raw aggregation via the message broker (e.g., _Kafka_), which stores logs without transformations to preserve metadata,
 * transformed aggregation in consumption engines, where logs are formatted for readability and analysis. This transformation tipically happens after the message broker stage, often during shipping to tools like the _Elastic ELK Stack_.
 
+Visualization is critical to help filtering logs by metadata and improve
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTcwNjA0NywxMTE5MTUwOTEwLDQ0MT
+eyJoaXN0b3J5IjpbMTIyMDYwNTMxMiwxMTE5MTUwOTEwLDQ0MT
 UwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4
 OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMT
 I0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4
