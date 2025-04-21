@@ -32,18 +32,22 @@ message.
 It is used when
 * no response needed, f.e. audit records,
 * admin tasks such as clean up processes,
-* out of band processes, f.e. email sending
+* out of band processes, f.e. email sending,
 * scaling the real blocking calls
+
+Considetarions such as
+* message acknowledgment determines when the broker removes the message,
+* Dead-letter queues (DLQ) should be monitored and managed properly,
+* Wire time and setup overhead may outweigh benefits if the message processing is trivial
 
 ### Publish-subscribe
 Single producer - multiple consumer.
 
 Send and forget.
 
-
 In traditional pub-sub, if a subscriber isn't there, it won't get the message. However, if the **subscriber is durable**, there is a guarantee that the message will be delivered at some point once the subscriber is available again. This is a specific registration process that allows this durable subscription.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MzUwMzk3NCwtMTQ0MDE1NzQzMSwtMT
-k0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcyNzI3NDUsLTQ0MDU3
-NTE2NiwtMjA2NzI3NTM3OF19
+eyJoaXN0b3J5IjpbLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMT
+Q0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3MDcy
+NzI3NDUsLTQ0MDU3NTE2NiwtMjA2NzI3NTM3OF19
 -->
