@@ -104,7 +104,7 @@ Writes are made to a local database node, and the update is asynchronously propa
 
 Useful in systems with multiple or globally distributed databases. To manage risk, caching, fallback reads, global load balancing, or circuit breaker pattern may be needed to build in.
 ### CQRS (Command Query Responsibility Segregation)
-Improves system throughput by separating write and read models. Can be achieved through an event-driven asynchronous architecture.
+Improves system throughput by separating write and read models, most commonly mirroring the write database in the read database with a simpler, optimized model. Can be achieved through an event-driven asynchronous architecture where read database's service polls the message broker for the newly updated datas.
 
 Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or wheere the reads require significant transformation or aggregation of the data.
 ### Data migrations
@@ -114,7 +114,7 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk0NTQ3NDk0LDg5MDc3ODE2NywtMTEyNT
+eyJoaXN0b3J5IjpbOTA1MTIwMjI2LDg5MDc3ODE2NywtMTEyNT
 A1MTg3OCwtMTU3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2
 NCwtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLT
 E1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAx
