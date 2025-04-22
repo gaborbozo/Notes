@@ -96,26 +96,27 @@ Stream data platform is ideal for analytics because
 * analytics can lead directly to automated system responses (event triggering).
 ## Data flows
 Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). To deal with this, asynchronous messaging supports several critical patterns.
-### Distributed data & eventual consistency
+### Patterns for handling large datas
+#### Distributed data & eventual consistency
 > While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
 
 Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and **eventual convergence**, meaning data across nodes may not immediately align.
 > Databases like Apache Cassandra manage this through quorum-based strategies, allowing control over how many replicas must confirm a write before it's acknowledged
 
 Useful in systems with multiple or globally distributed databases. To manage risk, caching, fallback reads, global load balancing, or circuit breaker pattern may be needed to build in.
-### CQRS (Command Query Responsibility Segregation)
+#### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models, most commonly mirroring the write database in the read database with a simpler, optimized model. Can be achieved through an event-driven asynchronous architecture where read database's service polls the message broker for the newly updated datas.
 
 Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or where the reads require significant transformation or aggregation of the data.
 ### Data synchronization between systems
-Perhaps the biggest pain point.
-Async messaging often becomes the only viable or exclusive solution.
+Two different systems need to have the same data.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTI4OTU4MywtMjc0ODI1MDUxLDg5MD
-c3ODE2NywtMTEyNTA1MTg3OCwtMTU3Mjg5MDUxMSwxMTE5MTUw
-OTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LDExNjc5MzYzODAsLT
-EzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQy
-MDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC
-0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0NDAxNTc0MzEsLTE5
-NDMzNDc0OTZdfQ==
+eyJoaXN0b3J5IjpbMTU0ODU3OTQ0MywyMTE1Mjg5NTgzLC0yNz
+Q4MjUwNTEsODkwNzc4MTY3LC0xMTI1MDUxODc4LC0xNTcyODkw
+NTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMT
+E2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5
+NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMy
+w0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0
+MDE1NzQzMV19
 -->
