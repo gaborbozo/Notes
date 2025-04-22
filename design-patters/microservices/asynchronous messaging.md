@@ -108,13 +108,15 @@ Useful in systems with multiple or globally distributed databases. To manage ris
 Improves system throughput by separating write and read models, most commonly mirroring the write database in the read database with a simpler, optimized model. Can be achieved through an event-driven asynchronous architecture where read database's service polls the message broker for the newly updated datas.
 
 Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or where the reads require significant transformation or aggregation of the data.
+### Live data migration from monolith into microservice
+
 ### Data synchronization between systems
 Two different systems need to have the same data.
 
-Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes so
+Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NTk0Njg0NCwyMTE1Mjg5NTgzLC0yNz
+eyJoaXN0b3J5IjpbLTU3NDIyNjA2NSwyMTE1Mjg5NTgzLC0yNz
 Q4MjUwNTEsODkwNzc4MTY3LC0xMTI1MDUxODc4LC0xNTcyODkw
 NTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMT
 E2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5
