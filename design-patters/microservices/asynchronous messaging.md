@@ -111,8 +111,10 @@ Frequently used in microservices to decouple data operations where the where the
 ### Data synchronization between systems
 Two different systems need to have the same data.
 
+Source system, the "truth" and destination system. Producer pushes data via 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODU3OTQ0MywyMTE1Mjg5NTgzLC0yNz
+eyJoaXN0b3J5IjpbLTk0Nzc3NjU1MSwyMTE1Mjg5NTgzLC0yNz
 Q4MjUwNTEsODkwNzc4MTY3LC0xMTI1MDUxODc4LC0xNTcyODkw
 NTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMT
 E2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5
