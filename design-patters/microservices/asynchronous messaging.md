@@ -111,18 +111,18 @@ Frequently used in microservices to decouple data operations where the where the
 ### Live data migration from monolith into microservice
 Maintaining the monolithic system in operation while the new microservices architecture is developed, with the new model continuously receiving live data from the legacy system.
 
-Reads and writes continue happening in the old monolith system. Even though the new database is not live yet, start setting it up in parallel. The message broker handles the transport of change events.
+Reads and writes continue happening in the old monolith system. Even though the new database is not live yet, start setting it up in parallel. The message broker handles the transport of change events while the consumer takes these events and writes to the new system.
 ### Data synchronization between systems
 Two different systems need to have the same data.
 
 Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDkxMzk0NSwyMTE1Mjg5NTgzLC0yNz
-Q4MjUwNTEsODkwNzc4MTY3LC0xMTI1MDUxODc4LC0xNTcyODkw
-NTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMT
-E2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5
-NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMy
-w0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0
-MDE1NzQzMV19
+eyJoaXN0b3J5IjpbLTUwNTgzMzkxLDIxMTUyODk1ODMsLTI3ND
+gyNTA1MSw4OTA3NzgxNjcsLTExMjUwNTE4NzgsLTE1NzI4OTA1
+MTEsMTExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMT
+Y3OTM2MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3
+NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLD
+QyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQw
+MTU3NDMxXX0=
 -->
