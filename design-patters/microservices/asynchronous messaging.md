@@ -111,14 +111,14 @@ Frequently used in microservices to decouple data operations where the where the
 ### Live data migration from monolith into microservice
 Maintaining the monolithic system in operation while the new microservices architecture is developed, with the new model continuously receiving live data from the legacy system.
 
-Reads and writes continue happening in the old monolith system. Even though the new database is not live yet, start setting it up in parallel. The message broker handles the transport of change events while the consumer takes these events and writes to the new system. A database trigger, a service hook, or a separate process acts as the producer of change events. Every time something changes (create/update/delete), a message is sent. For most events (not delete), the consumer queries the old DB to get the current state and then calls the new service, which transforms and writes to the new DB. Some records won’t get updated naturally during the migration window so a 
+Reads and writes still occur in the old monolith, but the new database setup begins in parallel. The message broker handles the transport of change events while the consumer takes these events and writes to the new system. A database trigger, a service hook, or a separate process acts as the producer of change events. Every time something changes (create/update/delete), a message is sent. For most events (not delete), the consumer queries the old DB to get the current state and then calls the new service, which transforms and writes to the new DB. Some records won’t get updated naturally during the migration window so a crawler process sweeps through and “re-publishes” those records via the same messaging mechanism.
 ### Data synchronization between systems
 Two different systems need to have the same data.
 
 Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA0MTM5NDYsMjExNTI4OTU4MywtMj
+eyJoaXN0b3J5IjpbLTIwMjU0MTk3MjMsMjExNTI4OTU4MywtMj
 c0ODI1MDUxLDg5MDc3ODE2NywtMTEyNTA1MTg3OCwtMTU3Mjg5
 MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LD
 ExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcy
