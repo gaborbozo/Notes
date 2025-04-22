@@ -109,18 +109,18 @@ Improves system throughput by separating write and read models, most commonly mi
 
 Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or where the reads require significant transformation or aggregation of the data.
 ### Live data migration from monolith into microservice
-
+Mo
 ### Data synchronization between systems
 Two different systems need to have the same data.
 
 Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDIyNjA2NSwyMTE1Mjg5NTgzLC0yNz
-Q4MjUwNTEsODkwNzc4MTY3LC0xMTI1MDUxODc4LC0xNTcyODkw
-NTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2NzUsMT
-E2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NSw2NzI5
-NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEwMzAxMy
-w0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NCwtMTQ0
-MDE1NzQzMV19
+eyJoaXN0b3J5IjpbLTE1NDEwMTI2OTEsMjExNTI4OTU4MywtMj
+c0ODI1MDUxLDg5MDc3ODE2NywtMTEyNTA1MTg3OCwtMTU3Mjg5
+MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LD
+ExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcy
+OTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMT
+MsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0
+NDAxNTc0MzFdfQ==
 -->
