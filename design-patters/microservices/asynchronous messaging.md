@@ -97,10 +97,12 @@ Stream data platform is ideal for analytics because
 ## Data flows
 Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). To deal with this, asynchronous messaging supports several critical patterns.
 ### Distributed data & eventual consistency
+While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
+
+Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and eventual convergence, meaning data across nodes may not immediately align.
+
 Useful in systems with multiple or globally distributed databases.
 Async messaging helps propagate changes efficiently across systems.
-
-While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models.
 Frequently used in microservices to decouple data operations.
@@ -111,11 +113,11 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjUwNTE4NzgsLTE1NzI4OTA1MTEsMT
-ExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2
-MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MS
-wxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMy
-OTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOTc0LC0xNDQwMTU3ND
-MxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4LDcwNzI3Mjc0NSwt
-NDQwNTc1MTY2XX0=
+eyJoaXN0b3J5IjpbLTk3OTQ4MjM3OCwtMTEyNTA1MTg3OCwtMT
+U3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4
+Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0Nj
+UsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQx
+MDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5Nz
+QsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgs
+NzA3MjcyNzQ1XX0=
 -->
