@@ -106,7 +106,7 @@ Useful in systems with multiple or globally distributed databases. To manage ris
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models. Can be achieved through an event-driven asynchronous architecture.
 
-Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or wheere the reads require sig.
+Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or wheere the reads require significant transformation or aggregation of the data.
 ### Data migrations
 Moving data between systems or databases is a common and complex task.
 Async patterns allow these migrations to happen smoothly and reliably.
@@ -114,7 +114,7 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NDk4ODIyLDg5MDc3ODE2NywtMTEyNT
+eyJoaXN0b3J5IjpbNTk0NTQ3NDk0LDg5MDc3ODE2NywtMTEyNT
 A1MTg3OCwtMTU3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2
 NCwtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLT
 E1MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAx
