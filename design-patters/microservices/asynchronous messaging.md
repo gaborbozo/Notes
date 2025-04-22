@@ -102,7 +102,7 @@ Data is hard, necessary, and slow (due to factors like network calls, disk IO, a
 Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and **eventual convergence**, meaning data across nodes may not immediately align.
 > Databases like Apache Cassandra manage this through quorum-based strategies, allowing control over how many replicas must confirm a write before it's acknowledged
 
-Useful in systems with multiple or globally distributed databases. To manage risk, ca
+Useful in systems with multiple or globally distributed databases. To manage risk, caching, fallback reads, global load balancing, or circuit breaker pattern may be needed to build in.
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models.
 Frequently used in microservices to decouple data operations.
@@ -113,11 +113,11 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgxNTg0NzAsLTExMjUwNTE4NzgsLT
-E1NzI4OTA1MTEsMTExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3
-ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2ND
-Y1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0
-MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOT
-c0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4
-LDcwNzI3Mjc0NV19
+eyJoaXN0b3J5IjpbNDExMDIyODQ5LC0xMTI1MDUxODc4LC0xNT
+cyODkwNTExLDExMTkxNTA5MTAsNDQxNTA2MDY0LC0zNDg4Nzg2
+NzUsMTE2NzkzNjM4MCwtMTMxNjUwNjg5MywtMTUwNjAyNjQ2NS
+w2NzI5NzUwOTEsMTMxNDIwODYxMiwxMjQ5MDE5MDAzLDU3NDEw
+MzAxMyw0MjczMjk1MDMsLTE5NjcyNDgxMzYsMTU0MzUwMzk3NC
+wtMTQ0MDE1NzQzMSwtMTk0MzM0NzQ5NiwtMTMzODAwNTg4OCw3
+MDcyNzI3NDVdfQ==
 -->
