@@ -97,12 +97,12 @@ Stream data platform is ideal for analytics because
 ## Data flows
 Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). To deal with this, asynchronous messaging supports several critical patterns.
 ### Distributed data & eventual consistency
-While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
+> While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
 
-Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and eventual convergence, meaning data across nodes may not immediately align.
+Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and **eventual convergence**, meaning data across nodes may not immediately align.
+> Databases like Apache Cassandra manage this through quorum-based strategies, allowing control over how many replicas must confirm a write before it's acknowledged
 
-Useful in systems with multiple or globally distributed databases.
-Async messaging helps propagate changes efficiently across systems.
+Useful in systems with multiple or globally distributed databases. To manage risk, ca
 ### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models.
 Frequently used in microservices to decouple data operations.
@@ -113,11 +113,11 @@ Async patterns allow these migrations to happen smoothly and reliably.
 Perhaps the biggest pain point.
 Async messaging often becomes the only viable or exclusive solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3OTQ4MjM3OCwtMTEyNTA1MTg3OCwtMT
-U3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4
-Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0Nj
-UsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQx
-MDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5Nz
-QsLTE0NDAxNTc0MzEsLTE5NDMzNDc0OTYsLTEzMzgwMDU4ODgs
-NzA3MjcyNzQ1XX0=
+eyJoaXN0b3J5IjpbLTEyOTgxNTg0NzAsLTExMjUwNTE4NzgsLT
+E1NzI4OTA1MTEsMTExOTE1MDkxMCw0NDE1MDYwNjQsLTM0ODg3
+ODY3NSwxMTY3OTM2MzgwLC0xMzE2NTA2ODkzLC0xNTA2MDI2ND
+Y1LDY3Mjk3NTA5MSwxMzE0MjA4NjEyLDEyNDkwMTkwMDMsNTc0
+MTAzMDEzLDQyNzMyOTUwMywtMTk2NzI0ODEzNiwxNTQzNTAzOT
+c0LC0xNDQwMTU3NDMxLC0xOTQzMzQ3NDk2LC0xMzM4MDA1ODg4
+LDcwNzI3Mjc0NV19
 -->
