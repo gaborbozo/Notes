@@ -17,7 +17,7 @@ RabbitMQ, Apache ActiveMQ, Java Message Services, Apache Kafka, Cache.
 ## Terms
 **Producer** creates message for another system to act on. It builds the message in the correct format (based on a contract) and dispatches it to the message broker. Once the message is sent, the producer usually confirms acceptance and ends the process.
 **Consumer** (or receiver) is the system that receives messages from the message broker. While there are various ways this can happen, the core responsibility of the consumer is to act on the message. After processing, it may either do nothing further (in simple workflows), or it may send a new message — either to another system downstream or back to the original sender, often as a response or callback.
-**Dead-letter queue** is a special palce in a message broker where error messages go, error such as format issues, timeouts, the queue being so backed up that it cannot accept the message.
+**Dead-letter queue** is a special place in a message broker where error messages go, error such as format issues, timeouts, the queue being so backed up that it cannot accept the message.
 ## Interservice communication patterns
 ### Point-to-point
 These calls can replace traditional restful calls between services, where the response is not needed or can be received in and out of band process. 
@@ -118,11 +118,11 @@ Two different systems need to have the same data.
 Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjU0MTk3MjMsMjExNTI4OTU4MywtMj
-c0ODI1MDUxLDg5MDc3ODE2NywtMTEyNTA1MTg3OCwtMTU3Mjg5
-MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NCwtMzQ4ODc4Njc1LD
-ExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1MDYwMjY0NjUsNjcy
-OTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOTAwMyw1NzQxMDMwMT
-MsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1NDM1MDM5NzQsLTE0
-NDAxNTc0MzFdfQ==
+eyJoaXN0b3J5IjpbLTE0MDMxOTEzODEsLTIwMjU0MTk3MjMsMj
+ExNTI4OTU4MywtMjc0ODI1MDUxLDg5MDc3ODE2NywtMTEyNTA1
+MTg3OCwtMTU3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NC
+wtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1
+MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOT
+AwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1
+NDM1MDM5NzRdfQ==
 -->
