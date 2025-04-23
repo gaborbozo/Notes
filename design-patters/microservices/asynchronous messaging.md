@@ -97,14 +97,14 @@ Stream data platform is ideal for analytics because
 ## Data flows
 Data is hard, necessary, and slow (due to factors like network calls, disk IO, and large index lookups). To deal with this, asynchronous messaging supports several critical patterns.
 ### Patterns for handling large datas
-#### Distributed data & eventual consistency
+##### Distributed data & eventual consistency
 > While _ACID_ (Atomicity, Consistency, Isolation, Durability) ensures strong consistency and reliability, typical of relational databases, _BASE_ (Basically Available, Soft state, Eventual consistency) prioritizes availability and resilience over immediate consistency.
 
 Writes are made to a local database node, and the update is asynchronously propagated to other nodes. Though this increases write speed and scalability, it introduces trade-offs like **latent reads** (reading stale data from a different node) and **eventual convergence**, meaning data across nodes may not immediately align.
 > Databases like Apache Cassandra manage this through quorum-based strategies, allowing control over how many replicas must confirm a write before it's acknowledged
 
 Useful in systems with multiple or globally distributed databases. To manage risk, caching, fallback reads, global load balancing, or circuit breaker pattern may be needed to build in.
-#### CQRS (Command Query Responsibility Segregation)
+##### CQRS (Command Query Responsibility Segregation)
 Improves system throughput by separating write and read models, most commonly mirroring the write database in the read database with a simpler, optimized model. Can be achieved through an event-driven asynchronous architecture where read database's service polls the message broker for the newly updated datas.
 
 Frequently used in microservices to decouple data operations where the where the updates are frequent and expensive, or where the reads require significant transformation or aggregation of the data.
@@ -118,11 +118,11 @@ Two different systems need to have the same data.
 Source system, the "truth" and destination system. Producer pushes data to the message broker, often just the ID and the action. Consumer picks up the message and if the id was provided then queries the source full data, otherwise it parses the full data directly from the message. A watcher may need to be implemented which periodically scans both systems and compares state between the source and destination to find mistmatch. It assuemes source is correct and pushes an update via the producer to re-sync.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDMxOTEzODEsLTIwMjU0MTk3MjMsMj
-ExNTI4OTU4MywtMjc0ODI1MDUxLDg5MDc3ODE2NywtMTEyNTA1
-MTg3OCwtMTU3Mjg5MDUxMSwxMTE5MTUwOTEwLDQ0MTUwNjA2NC
-wtMzQ4ODc4Njc1LDExNjc5MzYzODAsLTEzMTY1MDY4OTMsLTE1
-MDYwMjY0NjUsNjcyOTc1MDkxLDEzMTQyMDg2MTIsMTI0OTAxOT
-AwMyw1NzQxMDMwMTMsNDI3MzI5NTAzLC0xOTY3MjQ4MTM2LDE1
-NDM1MDM5NzRdfQ==
+eyJoaXN0b3J5IjpbMjkwMTIxNTEzLC0xNDAzMTkxMzgxLC0yMD
+I1NDE5NzIzLDIxMTUyODk1ODMsLTI3NDgyNTA1MSw4OTA3Nzgx
+NjcsLTExMjUwNTE4NzgsLTE1NzI4OTA1MTEsMTExOTE1MDkxMC
+w0NDE1MDYwNjQsLTM0ODg3ODY3NSwxMTY3OTM2MzgwLC0xMzE2
+NTA2ODkzLC0xNTA2MDI2NDY1LDY3Mjk3NTA5MSwxMzE0MjA4Nj
+EyLDEyNDkwMTkwMDMsNTc0MTAzMDEzLDQyNzMyOTUwMywtMTk2
+NzI0ODEzNl19
 -->
