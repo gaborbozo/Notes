@@ -5,7 +5,10 @@
 **Edge service** interfaces directly with users or external systems (e.g., web or mobile clients).
 # Decomposition patterns
 Decomposing a problem into smaller blocks of work.
+## Domain-based microservices
+
+## Business process-based microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg2MjYyNzgsLTU1ODQ2NjA2MywxOT
-c2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbLTM5OTgwODUxMSwtNTU4NDY2MDYzLDE5Nz
+Y5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
