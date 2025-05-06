@@ -6,9 +6,9 @@
 # Decomposition patterns
 Decomposing a problem into smaller blocks of work.
 ## Domain-based microservices
-
+Lowest level of decomposition that might be seen in a microservices architecture. Goal is to make services m
 ## Business process-based microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTgwODUxMSwtNTU4NDY2MDYzLDE5Nz
-Y5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbLTQ1NDY1ODgwNSwtMzk5ODA4NTExLC01NT
+g0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX0=
 -->
