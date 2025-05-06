@@ -13,13 +13,13 @@ Focuses on serving the data as it will be used throughout the system and applyin
 
 It's possible that a domain shares enough functionality with anoter domain that it may trigger to merge them into a new single domain. The key is on **focusing the data and how it is actually used throughout the system**.
 
-Telemetry makes this pattern ef
+**Telemetry** (system data/metrics) helps refine domain boundaries more effectively than just relying on experience.
 
 1. Start with defining the domain not the database schema.
-2. Evaluate actions that need to be performed.
-3. 
+2. Evaluate actions that need to be performed (not just CRUD).
+3. After everything start to address the data store and underlying implementation details.
 ## Business process-based microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQxMjI0MDE4LC0zOTk4MDg1MTEsLTU1OD
-Q2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbLTE5NDI0NDk3MjAsLTM5OTgwODUxMSwtNT
+U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
