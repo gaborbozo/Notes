@@ -21,9 +21,9 @@ It's possible that a domain shares enough functionality with anoter domain that 
 ## Business process-based microservices
 Business process-based microservices address complex workflows that span multiple domains (keeping the DRY principle). Unlike domain-based microservices, which focus on a single data domain, these services represent higher-level abstractions centered around business logic and processes.
 
-Th
+**These services do not own or manage data directly** instead, they coordinate between domain services, maintaining a clear separation between business logic and data access. The goal is not to add unnecessary layers, but to provide meaningful abstraction - only where processes genuinely require cross-domain coordination.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzAzODUzMjcsLTE4MDYwNTU5OTEsLT
+eyJoaXN0b3J5IjpbLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLT
 M5OTgwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4
 Nzg0OV19
 -->
