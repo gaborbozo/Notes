@@ -13,9 +13,13 @@ Focuses on serving the data as it will be used throughout the system and applyin
 
 It's possible that a domain shares enough functionality with anoter domain that it may trigger to merge them into a new single domain. The key is on **focusing the data and how it is actually used throughout the system**.
 
+Telemetry
 
+1. Start with defining the domain not the database schema.
+2. Evaluate actions that need to be performed.
+3. 
 ## Business process-based microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODc4MDI1NTUsLTM5OTgwODUxMSwtNT
+eyJoaXN0b3J5IjpbLTEzNTkxMzA0ODYsLTM5OTgwODUxMSwtNT
 U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
