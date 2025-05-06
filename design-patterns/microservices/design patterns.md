@@ -9,9 +9,11 @@ Decomposing a problem into smaller blocks of work.
 Lowest level of decomposition that might be seen in a microservices architecture. Goal is to make services more scalable.
 > One of the most efficient way to make services smaller, and more focused.
 
-Focuses on serving the data as it will be used throughout the system and applying logic within the domain itself. 
+Focuses on serving the data as it will be used throughout the system and applying logic within the domain itself.
+
+It's possible that a domain shares enough functionality with anoter domain that it may trigger to merge them into a new single domain. On the contray it's also possible that 
 ## Business process-based microservices
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI2OTcyMzEsLTM5OTgwODUxMSwtNT
-U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbLTI2NDY0OTY3MiwtMzk5ODA4NTExLC01NT
+g0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX0=
 -->
