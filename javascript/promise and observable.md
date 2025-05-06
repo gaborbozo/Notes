@@ -25,9 +25,11 @@ An `Observable` is a stream that can emit multiple values, and you subscribe to 
 # When working with them at once
 Promise callbacks run before Observable emissions, but not because of the order in the code - it's because **Promises use the microtask queue**, and **Observables (usually) use the macrotask queue**.
 > **Synchronous code runs first** (top of the stack).
-> Then, the **microtask queue** runs: `Promise.then`, `await`, etc.    
+> 
+> Then, the **microtask queue** runs: `Promise.then`, `await`, etc.
+>     
 >Finally, the **macrotask queue** runs: `setTimeout`, `setInterval`, many Observables (`fromEvent`, `interval`, etc.).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA2ODQyNDddfQ==
+eyJoaXN0b3J5IjpbMTAxOTYzNjc3N119
 -->
