@@ -4,8 +4,8 @@
 **Translation service** wraps third-party services with your own interface.
 **Edge service** interfaces directly with users or external systems (e.g., web or mobile clients).
 # Decomposition patterns
-5
+Decomposing a problem into smaller blocks of work.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1ND
-MwODc4NDldfQ==
+eyJoaXN0b3J5IjpbLTEwMTg2MjYyNzgsLTU1ODQ2NjA2MywxOT
+c2OTg3NDA2LDE1NDMwODc4NDldfQ==
 -->
