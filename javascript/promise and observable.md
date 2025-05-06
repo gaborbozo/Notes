@@ -14,7 +14,7 @@ A `Promise` is used for a single asynchronous value that arrives in the future.
 An `Observable` is a stream that can emit multiple values, and you subscribe to receive them.
 |  |  |
 |--|--|
-| `Observable` | A class (from RxJS) that represents a stream |
+| `Observable` | A class from RxJS that represents a stream |
 | `subscribe()` | Starts listening to the Observable's emissions |
 | `next(value)` | Emits a new value to subscribers |
 | `error(err)` | Sends an error to subscribers and stops the stream |
@@ -22,36 +22,7 @@ An `Observable` is a stream that can emit multiple values, and you subscribe to 
 | `unsubscribe()` | Stops receiving values and cleans up resources |
 | `pipe()` | Chains RxJS operators to transform the stream |
 | `map`, `filter`, `debounceTime`, etc. | Common RxJS operators for stream transformation |
-
-A class (from RxJS) that represents a stream.
-
-`subscribe()`
-
-Starts listening to the Observable's emissions.
-
-`next(value)`
-
-Emits a new value to subscribers.
-
-`error(err)`
-
-Sends an error to subscribers and stops the stream.
-
-`complete()`
-
-Signals that the Observable has finished emitting values.
-
-`unsubscribe()`
-
-Stops receiving values and cleans up resources.
-
-`pipe()`
-
-Chains RxJS operators to transform the stream.
-
-`map`, `filter`, `debounceTime`, etc.
-
-Common RxJS operators for stream transformation.
+# When work
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAwMjQ1MzZdfQ==
+eyJoaXN0b3J5IjpbMTcyNzU2MzE4OF19
 -->
