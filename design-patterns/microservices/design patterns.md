@@ -28,8 +28,10 @@ Cases where atomic transactions a must have because eventual consistency is not 
 
 Providing cross-domain services that support failure domains and rollbacks of the entire domain **must force a blocking API call until the commit is succesful**.
 > While logically can do these asynchronously, usually the caller needs a guarantee of success or an error, so the API must be synchronous and blocking.
+## Strangler pattern
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTc0MjY3MSwtMTM5ODM2NTg3MiwtMT
-gwNjA1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYwNjMsMTk3Njk4
-NzQwNiwxNTQzMDg3ODQ5XX0=
+eyJoaXN0b3J5IjpbMTc2Nzg3NzE2MywyMDQ5NzQyNjcxLC0xMz
+k4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2
+NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
 -->
