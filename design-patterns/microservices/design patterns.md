@@ -42,9 +42,10 @@ Gradual strategy for decomposing a monolithic system into microservices. It's id
 - move each domains to its own separate database and create corresponding services,
 - redirect clients to the new services and remove legacy dependencies once migration is complete.
 ## Sidecar pattern (decomposing duplicated functions)
-Offload common functionality [logging, monitoring, or security] into a separate, co-deployed module alongside each microservice, reducing code duplication and improving maintainability.
+Offload common functionality [logging, monitoring, or security] into a separate, co-deployed module (separate standalone process) alongside each microservice, reducing code duplication and improving maintainability.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3ND
-I2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUx
-MSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2Nj
+Q0MjIsMjA0OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5
+MSwtMzk5ODA4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNT
+QzMDg3ODQ5XX0=
 -->
