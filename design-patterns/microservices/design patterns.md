@@ -34,9 +34,9 @@ Following this approach all tables need to be under the same database in order t
 Keeping tables in different databases with two phase commiting guarantees atomicity. 
 ## Decomposing a legacy monolith application
 ### Strangler pattern
-
+Gradual strategy for decomposing a monolithic system into microservices, involving incrementally extracting functionality from the monolith and replacing it with microservices until the monolith is no longer needed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODg5OTkwMSwyMDQ5NzQyNjcxLC0xMz
-k4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2
-NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbMzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOT
+gzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNTU4NDY2
+MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
