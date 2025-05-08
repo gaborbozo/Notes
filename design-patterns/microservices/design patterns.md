@@ -26,10 +26,10 @@ Business process-based microservices address complex workflows that span multipl
 Cases where atomic transactions a must have because eventual consistency is not good enough (atomic transactions that span multiple data domains).
 > In the context of a single domain, there is no need to specialize a service, because the underlying implementation is hidden.
 
-
-
+Providing cross-domain services that support failure domains and rollbacks of the entire domain **must force a blocking API call until the commit is succesful**.
+> While logically do these asynchronously, usually the caller needs a guarantee of success or an error, so the API must be synchronous and blocking.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2NTQ5NTMyLC0xMzk4MzY1ODcyLC0xOD
-A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
-NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbMTY1Mzg2NzgwNywtMTM5ODM2NTg3MiwtMT
+gwNjA1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYwNjMsMTk3Njk4
+NzQwNiwxNTQzMDg3ODQ5XX0=
 -->
