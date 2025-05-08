@@ -23,11 +23,13 @@ Business process-based microservices address complex workflows that span multipl
 
 **These services do not own or manage data directly** instead, they coordinate between domain services, maintaining a clear separation between business logic and data access. The goal is not to add unnecessary layers, but to provide meaningful abstraction - only where processes genuinely require cross-domain coordination.
 ## Atomic transaction-based microservices
-Cases where atomic transactions a must have because eventual consistency is not good enough (atomic transactions that span multiple ).
+Cases where atomic transactions a must have because eventual consistency is not good enough (atomic transactions that span multiple data domains).
+> In the context of a single domain, there is no need to specialize a service, because the underlying implementation is hidden.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE1OTkwMTc3LC0xMzk4MzY1ODcyLC0xOD
+eyJoaXN0b3J5IjpbNTQ2NTQ5NTMyLC0xMzk4MzY1ODcyLC0xOD
 A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
 NDA2LDE1NDMwODc4NDldfQ==
 -->
