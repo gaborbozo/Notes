@@ -35,9 +35,15 @@ Keeping tables in different databases with two phase commiting guarantees atomic
 ## Decomposing a legacy monolith application
 ### Strangler pattern
 Gradual strategy for decomposing a monolithic system into microservices. It's idea is to strangle the monolith by creating microservices based on business processes, which can be achieved in two ways:
-##### Top-down
+##### Top-down (API first)
+- Begin with building APIs and associated services,
+- later, migrate the underyling data if needed.
+##### Bottom-up (Data first)
+- Identify the domains within the monolith,
+- move each domains to its own separate database and create corresponding services,
+- redirect clients to the new services and remove 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTM1MTk1MSwzNDQ2NjQ0MjIsMjA0OT
+eyJoaXN0b3J5IjpbLTI3MzEyOTcwMywzNDQ2NjQ0MjIsMjA0OT
 c0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4
 NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX
 0=
