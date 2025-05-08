@@ -32,20 +32,19 @@ Providing cross-domain services that support failure domains and rollbacks of th
 Following this approach all tables need to be under the same database in order to force atomicity.
 ###  Distributed Transaction Protocol
 Keeping tables in different databases with two phase commiting guarantees atomicity. 
-## Decomposing a legacy monolith application
-### Strangler pattern
+## Strangler pattern (decomposing a legacy monolith application)
 Gradual strategy for decomposing a monolithic system into microservices. It's idea is to strangle the monolith by creating microservices based on business processes, which can be achieved in two ways:
-##### Top-down (API first)
+### Top-down (API first)
 - Begin with building APIs and associated services,
 - later, migrate the underyling data if needed.
-##### Bottom-up (Data first)
+### Bottom-up (Data first)
 - Identify the domains within the monolith,
 - move each domains to its own separate database and create corresponding services,
 - redirect clients to the new services and remove legacy dependencies once migration is complete.
-
+## Sidecar pattern (offload common func)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI4MzUxMTEsMzQ0NjY0NDIyLDIwND
-k3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgw
-ODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV
-19
+eyJoaXN0b3J5IjpbLTc3MjA5NTA1OSwzNDQ2NjQ0MjIsMjA0OT
+c0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4
+NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX
+0=
 -->
