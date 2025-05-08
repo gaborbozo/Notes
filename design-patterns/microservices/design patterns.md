@@ -30,12 +30,13 @@ Providing cross-domain services that support failure domains and rollbacks of th
 > While logically can do these asynchronously, usually the caller needs a guarantee of success or an error, so the API must be synchronous and blocking.
 
 Following this approach all tables need to be under the same database in order to force atomicity.
-### Keeping tables in different databases with 
+###  Distributed Transaction Protocol
+Keeping tables in different databases with two phase commiting guarantees atomicity. 
 ## Decomposing a legacy monolith application
 ### Strangler pattern
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTY4MjQ4LDIwNDk3NDI2NzEsLTEzOT
-gzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNTU4NDY2
-MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbLTQ1ODg5OTkwMSwyMDQ5NzQyNjcxLC0xMz
+k4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2
+NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
 -->
