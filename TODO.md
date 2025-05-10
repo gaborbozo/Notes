@@ -1,10 +1,3 @@
-
-Component
-
-Purpose
-
-Example Technologies
-
 **Message Queue**
 
 Point-to-point messaging, decouples sender and receiver
@@ -41,5 +34,5 @@ Synchronous communication between services
 
 gRPC, Thrift, JSON-RPC, REST APIs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4NzAzNDAxXX0=
+eyJoaXN0b3J5IjpbLTE2OTAxMjAyMzhdfQ==
 -->
