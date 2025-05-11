@@ -48,11 +48,13 @@ Orchestration and ingress needs across the system as a whole.
 ## Gateway pattern
 It is an ingress pattern for client communicating with services. Designed to provide a buffer between the underlying services and the client needs. Can be accomplished via facade or simple proxy.
 
-It offers centrallized control over requests (especially as client diversity grows [e.g, mobile, desktop, third-party vendors]), mutating, decorating, aggregating, or restricting calls based on client needs. 
+It offers **centrallized control over requests** (especially as client diversity grows [e.g, mobile, desktop, third-party vendors]), mutating, decorating, aggregating, or restricting calls based on client needs. Enables consistent payload shaping (do not need to bother on the service side when something have been changed), security, and scalability, while shielding internal services from direct exposure.
+
+This pattern 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzNzg5NTkwLDU2ODkzNDcxNiw0NzU1ND
-YyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0
-OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5OD
-A4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5
-XX0=
+eyJoaXN0b3J5IjpbMjEyMzgxODg1OSw1Njg5MzQ3MTYsNDc1NT
+Q2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIw
+NDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OT
+gwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0
+OV19
 -->
