@@ -64,10 +64,11 @@ To implement a process aggregator:
 3.  Create a new model specific to the aggregator’s output.
 4.  Implement the API, ideally using REST if suitable.
 5.  Encapsulate the internal logic to protect maintainability and future scalability.
+#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NT
-U0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwy
-MDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOT
-k4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4
-NDldfQ==
+eyJoaXN0b3J5IjpbLTE1NDk4MDI0MTUsLTIwNjU0MDQ5MTAsNT
+Y4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDky
+LDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xOD
+A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
+NDA2LDE1NDMwODc4NDldfQ==
 -->
