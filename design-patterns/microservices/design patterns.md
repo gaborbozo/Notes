@@ -57,10 +57,17 @@ It is an **orchestration pattern** used to combine multiple business processes i
 This patterns should contain business logic that governs how processes are invoked and how their results are merged, preventing clients from duplicating logic (keeping DRY) and ensuring consistent behavior across the system.
 
 It is possible aggregators can become a **choke point** in the system if they involve sequential, long running operations (in such cases use asynchronous patterns).
+
+To implement a process aggregator:
+1.  Identify which business processes need to be orchestrated.
+2.  Define the processing rules and how they interact.
+3.  Create a new model specific to the aggregator’s output.
+4.  Implement the API, ideally using REST if suitable.
+5.  Encapsulate the internal logic to protect maintainability and future scalability.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM1NjQ3ODUsNTY4OTM0NzE2LDQ3NTU0Nj
-IyNywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5
-NzQyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MD
-g1MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDld
-fQ==
+eyJoaXN0b3J5IjpbMTYwMzAwMzY3LDU2ODkzNDcxNiw0NzU1ND
+YyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0
+OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5OD
+A4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5
+XX0=
 -->
