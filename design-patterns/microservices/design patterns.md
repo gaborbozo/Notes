@@ -60,10 +60,12 @@ It is possible aggregators can become a **choke point** in the system if they in
 ## Edge pattern
 It is an **ingress pattern** which purpose is to introduce dedicated edge services for each client type. 
 
+These service provide aggregation, consolidation, and comple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMD
-Y1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQy
-MCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5OD
-M2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYw
-NjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX0=
+eyJoaXN0b3J5IjpbMTE1MDUwOTUyMCwtMTQyNzEyNTg1Miw5Nj
+g2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIy
+NywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5Nz
+QyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1
+MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ
+==
 -->
