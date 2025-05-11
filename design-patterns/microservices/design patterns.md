@@ -47,9 +47,12 @@ Offload common functionality [logging, monitoring, or security] into a separate,
 Orchestration and ingress needs across the system as a whole.
 ## Gateway pattern
 It is an ingress pattern for client communicating with services. Designed to provide a buffer between the underlying services and the client needs. Can be accomplished via facade or simple proxy.
+
+It offers centrallized control over requests (especially as client diversity grows [e.g, mobile, desktop, third-party vendors]), mutating, decorating, aggregating, or restricting calls based on client needs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExND
-U3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0x
-Mzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1OD
-Q2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbMjIzNzg5NTkwLDU2ODkzNDcxNiw0NzU1ND
+YyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0
+OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5OD
+A4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5
+XX0=
 -->
