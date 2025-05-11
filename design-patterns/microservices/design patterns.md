@@ -52,11 +52,11 @@ It offers **centrallized control over requests** (especially as client diversity
 
 This pattern **must avoid business logic and maintain contract stability through strict versioning** (changes should only extend functionality (e.g., adding optional fields), never remove or change existing behavior) **and passive API behavior** (like `/v1/`, `/v2` ensuring older versions continue to work even if newer versions are released).
 ## Process aggregator pattern
-It is an **orchestration pattern** used to combine multiple business processes into a single API call for clients - di.
+It is an **orchestration pattern** used to combine multiple business processes into a single API call for clients - different business processes must be executed together, and their results combined into a unified response.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTIxMjgwMSw1Njg5MzQ3MTYsNDc1NT
-Q2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIw
-NDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OT
-gwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0
-OV19
+eyJoaXN0b3J5IjpbLTQxNjMyNzAxLDU2ODkzNDcxNiw0NzU1ND
+YyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0
+OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5OD
+A4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5
+XX0=
 -->
