@@ -46,10 +46,10 @@ Offload common functionality [logging, monitoring, or security] into a separate,
 # Integration patterns
 Orchestration and ingress needs across the system as a whole.
 ## Gateway pattern
-Its an ingress pattern for client communicating with serv 
+It is an ingress pattern for client communicating with services. Designed to provide a 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTIzNDA1MzMsNDc1NTQ2MjI3LDIxMT
-E0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEs
-LTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNT
-U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbMzQwNzY3OTkyLDQ3NTU0NjIyNywyMTExND
+U3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0x
+Mzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1OD
+Q2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
 -->
