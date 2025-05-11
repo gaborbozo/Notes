@@ -54,11 +54,11 @@ This pattern **must avoid business logic and maintain contract stability through
 ## Process aggregator pattern
 It is an **orchestration pattern** used to combine multiple business processes into a single API call for clients - different business processes must be executed together, and their results combined into a unified response.
 
-This patterns should contain business logic that governs how processes are invoked and how their results are merged, preventing clients from duplicating logic (keeping DRY) and ensuring consistent behgavior. 
+This patterns should contain business logic that governs how processes are invoked and how their results are merged, preventing clients from duplicating logic (keeping DRY) and ensuring consistent behavior across the system. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ2MzQ5NDQsNTY4OTM0NzE2LDQ3NT
-U0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwy
-MDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOT
-k4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4
-NDldfQ==
+eyJoaXN0b3J5IjpbMTc0MDExMDUwLDU2ODkzNDcxNiw0NzU1ND
+YyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0
+OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5OD
+A4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5
+XX0=
 -->
