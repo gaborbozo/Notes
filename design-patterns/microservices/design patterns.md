@@ -45,9 +45,11 @@ Gradual strategy for decomposing a monolithic system into microservices. It's id
 Offload common functionality [logging, monitoring, or security] into a separate, co-deployed module (separate standalone process) alongside each microservice, reducing code duplication and improving maintainability.
 # Integration patterns
 Orchestration and ingress needs across the system as a whole.
+## Gateway pattern
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NzUxOTI3NSwyMTExNDU3NDIwLDEwOT
-Q0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcy
-LC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOT
-c2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5ND
+Q0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIs
+LTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNTU4NDY2MDYzLDE5Nz
+Y5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
