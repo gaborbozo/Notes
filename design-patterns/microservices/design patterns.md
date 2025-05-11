@@ -64,9 +64,10 @@ To implement a process aggregator:
 3.  Create a new model specific to the aggregator’s output.
 4.  Implement the API, ideally using REST if suitable.
 5.  Encapsulate the internal logic to protect maintainability and future scalability.
-#
+## Edge pattern
+It is client-specian **ingress pattern**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk4MDI0MTUsLTIwNjU0MDQ5MTAsNT
+eyJoaXN0b3J5IjpbLTEzOTU4MDI1MzgsLTIwNjU0MDQ5MTAsNT
 Y4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDky
 LDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xOD
 A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
