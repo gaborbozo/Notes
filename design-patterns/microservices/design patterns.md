@@ -65,11 +65,12 @@ To implement a process aggregator:
 4.  Implement the API, ideally using REST if suitable.
 5.  Encapsulate the internal logic to protect maintainability and future scalability.
 ## Edge pattern
-It is client-specian **ingress pattern**
+It is an **ingress pattern**. Client-specific subset of the gateway pattern which is designet to solve two problems:
+*  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTU4MDI1MzgsLTIwNjU0MDQ5MTAsNT
-Y4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDky
-LDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xOD
-A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
-NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2OD
+kzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5Miwz
+NDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNj
+A1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQw
+NiwxNTQzMDg3ODQ5XX0=
 -->
