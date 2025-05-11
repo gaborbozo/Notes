@@ -59,10 +59,11 @@ This patterns should contain business logic that governs how processes are invok
 It is possible aggregators can become a **choke point** in the system if they involve sequential, long running operations (in such cases use asynchronous patterns [e.g., message queue, saga pattern, polling + webhooks or notifications, ..]).
 ## Edge pattern
 It is an **ingress pattern** which purpose is to introduce dedicated edge services for each client type. 
+> Though gateways simplify centralized maintenance, edge services offer greater agility and isolation, especially useful in mobile or high-variation client environments.
 
 These service provide aggregation, consolidation, and complexity isolation tailored to the client, also more efficient scaling, since services scale based only on the clien's load. Supports better flexibility for adding new clients or updating APIs without impacting others and improved security, throught tighter control and isolation (e.g., with OAuth).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NTYzMDMzNCwtMTQyNzEyNTg1Miw5Nj
+eyJoaXN0b3J5IjpbLTM2ODI3OTU4OCwtMTQyNzEyNTg1Miw5Nj
 g2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIy
 NywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5Nz
 QyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1
