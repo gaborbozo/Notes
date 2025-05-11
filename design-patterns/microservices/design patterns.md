@@ -50,11 +50,9 @@ It is an ingress pattern for client communicating with services. Designed to pro
 
 It offers **centrallized control over requests** (especially as client diversity grows [e.g, mobile, desktop, third-party vendors]), mutating, decorating, aggregating, or restricting calls based on client needs. Enables **consistent payload shaping** (do not need to bother on the service side when something have been changed), security, and scalability, while shielding internal services from direct exposure.
 
-This pattern **must avoid business logic and maintain contract stability through strict versioning and passive API behavior**.
-> Strict versioning like `/v1/`, `/v2` ensuring older versions continue to work even if newer versions are released.
-> Passive API behavior 
+This pattern **must avoid business logic and maintain contract stability through strict versioning** (changes should only extend functionality (e.g., adding optional fields), never remove or change existing behavior) **and passive API behavior** (like `/v1/`, `/v2` ensuring older versions continue to work even if newer versions are released).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzExNTYxNiw1Njg5MzQ3MTYsNDc1NT
+eyJoaXN0b3J5IjpbLTY3NTQzOTYwMCw1Njg5MzQ3MTYsNDc1NT
 Q2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIw
 NDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OT
 gwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0
