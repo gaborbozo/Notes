@@ -57,20 +57,13 @@ It is an **orchestration pattern** used to combine multiple business processes i
 This patterns should contain business logic that governs how processes are invoked and how their results are merged, preventing clients from duplicating logic (keeping DRY) and ensuring consistent behavior across the system.
 
 It is possible aggregators can become a **choke point** in the system if they involve sequential, long running operations (in such cases use asynchronous patterns [e.g., message queue, saga pattern, polling + webhooks or notifications, ..]).
-
-To implement a process aggregator:
-1.  Identify which business processes need to be orchestrated.
-2.  Define the processing rules and how they interact.
-3.  Create a new model specific to the aggregator’s output.
-4.  Implement the API, ideally using REST if suitable.
-5.  Encapsulate the internal logic to protect maintainability and future scalability.
 ## Edge pattern
-It is an **ingress pattern**. Client-specific subset of the gateway pattern which is designet to solve two problems:
-*  
+It is an **ingress pattern** which purpose is to introduce dedicated edge services for each client type. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2OD
-kzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5Miwz
-NDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNj
-A1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYwNjMsMTk3Njk4NzQw
-NiwxNTQzMDg3ODQ5XX0=
+eyJoaXN0b3J5IjpbLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMD
+Y1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQy
+MCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5OD
+M2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYw
+NjMsMTk3Njk4NzQwNiwxNTQzMDg3ODQ5XX0=
 -->
