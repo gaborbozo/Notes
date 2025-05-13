@@ -82,15 +82,13 @@ Each service should use unique credentials limited to its own schema to ensure p
 In a CQRS separates read and write models, each with distinct rules, diverging from traditional CRUD patterns. 
 
 Query models may be optimized for specific views or uses, while command (write) models encapsulate behaviors and business logic. This divergence introduces eventual consistency, where data written isn't immediately available for reading
-
-
 ## Asynchronous eventing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3Nj
-E1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3
-OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xND
-I3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3
-MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0Nj
-Y0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5
-OTFdfQ==
+eyJoaXN0b3J5IjpbOTY1NjMxMTMyLDE4MTQ1MDQzMTIsLTUxMD
+k3Mjg5NywzNzYxNTEzMTMsLTEwNDY3NDA1MjAsNTExNTYwMTkw
+LDIwNTY3NTc4NzksMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2OD
+I3OTU4OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5
+MTAsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOT
+Q0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcy
+XX0=
 -->
