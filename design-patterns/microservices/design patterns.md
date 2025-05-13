@@ -78,12 +78,16 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 **All the data domains exist within a single database instance**, but we can still treat them as separate databases. To future-proof systems, structure data using schemas, keyspaces, or similar **logical separations**. 
 
 Each service should use unique credentials limited to its own schema to ensure proper segmentation. Avoid sharing credentials across logical boundaries to maintain isolation. **Logical isolation prepares systems for future** scaling or migration to multiple database engines with minimal disruption.
+## Command query responsibility segregation
+
+
+## Asynchronous eventing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLDUxMT
-U2MDE5MCwyMDU2NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5NjI0
-LC0zNjgyNzk1ODgsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMD
-Y1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQy
-MCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5OD
-M2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4NTExLC01NTg0NjYw
-NjNdfQ==
+eyJoaXN0b3J5IjpbLTIwNDg0OTc3NzgsMzc2MTUxMzEzLC0xMD
+Q2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAxOTE5
+OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NTIsOT
+Y4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYy
+MjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0OT
+c0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4
+NTExXX0=
 -->
