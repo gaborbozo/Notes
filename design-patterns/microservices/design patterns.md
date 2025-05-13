@@ -72,10 +72,11 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 **Each data domain get its own dedicated data store**. Caveat here is that if the domain also is included in an atomic transaction, we have to be a little bit less fine grained.
 
 **As the service scales, the data store itself also scales** and since both the data domain and data store are isolated, they can be both scaled up without impacting the system as a whole.
+## Shared service database
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDY5ODc5NCwyMDUwMTkxOTk1LDI1MT
+eyJoaXN0b3J5IjpbMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MT
 YzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0
 MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMT
 E0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEs
