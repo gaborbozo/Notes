@@ -73,13 +73,15 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 
 **As the service scales, the data store itself also scales** and since both the data domain and data store are isolated, they can be both scaled up without impacting the system as a whole.
 ## Shared service database
-
+> Enterprise construct that is carried over into this distributed model.
+> 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MT
-YzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0
-MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMT
-E0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEs
-LTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNT
-U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
+eyJoaXN0b3J5IjpbLTY3MjYxNzgwLDIwNTY3NTc4NzksMjA1MD
+E5MTk5NSwyNTE2Mzk2MjQsLTM2ODI3OTU4OCwtMTQyNzEyNTg1
+Miw5Njg2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NT
+U0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwy
+MDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOT
+k4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4
+NDldfQ==
 -->
