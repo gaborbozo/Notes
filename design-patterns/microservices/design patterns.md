@@ -79,15 +79,15 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 
 Each service should use unique credentials limited to its own schema to ensure proper segmentation. Avoid sharing credentials across logical boundaries to maintain isolation. **Logical isolation prepares systems for future** scaling or migration to multiple database engines with minimal disruption.
 ## Command query responsibility segregation
-
+In a CQRS model, query interfaces may transform and aggregate the schema to represent the model in a very specific use. 
 
 ## Asynchronous eventing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg0OTc3NzgsMzc2MTUxMzEzLC0xMD
-Q2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAxOTE5
-OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NTIsOT
-Y4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYy
-MjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0MjIsMjA0OT
-c0MjY3MSwtMTM5ODM2NTg3MiwtMTgwNjA1NTk5MSwtMzk5ODA4
-NTExXX0=
+eyJoaXN0b3J5IjpbLTUxMDk3Mjg5NywzNzYxNTEzMTMsLTEwND
+Y3NDA1MjAsNTExNTYwMTkwLDIwNTY3NTc4NzksMjA1MDE5MTk5
+NSwyNTE2Mzk2MjQsLTM2ODI3OTU4OCwtMTQyNzEyNTg1Miw5Nj
+g2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIy
+NywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5Nz
+QyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1
+MTFdfQ==
 -->
