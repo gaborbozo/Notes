@@ -85,13 +85,13 @@ Query models may be optimized for specific views or uses, while command (write) 
 ## Asynchronous eventing
 > Long-running transactions or complex workflows that simply cannot fit into a single, blocking API call.
 
- Service API triggers and event that can cascade asynchronously from the API itself, putting together a series of actions that all happen behind the scenes after the client has received an accepted message from the service API of course. 
+**Handles processes that can’t or shouldn’t happen in real time**. Begins with a service API that triggers an event, which then cascades through the system behind the scenes. The client typically receives an immediate acknowledgment (e.g., HTTP 202 Accepted), while the actual processing continues asynchronously. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg3NDIzNzYxLDE4MTQ1MDQzMTIsLTUxMD
-k3Mjg5NywzNzYxNTEzMTMsLTEwNDY3NDA1MjAsNTExNTYwMTkw
-LDIwNTY3NTc4NzksMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2OD
-I3OTU4OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5
-MTAsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOT
-Q0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcy
-XX0=
+eyJoaXN0b3J5IjpbLTEyOTI2NjM3MTcsMTgxNDUwNDMxMiwtNT
+EwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAx
+OTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMz
+Y4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQw
+NDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMT
+A5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4
+NzJdfQ==
 -->
