@@ -66,11 +66,13 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 
 ## Single-service single-database
 In a microservices architecture, the service scalability needs should be proportional to the database's scaling needs.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2OD
-I3OTU4OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5
-MTAsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOT
-Q0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcy
-LC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOT
-c2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbLTIxNjk4ODIwMSwyMDUwMTkxOTk1LDI1MT
+YzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0
+MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMT
+E0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEs
+LTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNT
+U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
