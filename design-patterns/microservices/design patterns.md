@@ -87,13 +87,14 @@ In a CQRS separates read and write models, each with distinct rules, diverging f
 **Handles processes that can’t or shouldn’t happen in real time**. Begins with a service API that triggers an event, which then cascades through the system behind the scenes. The client typically receives an immediate acknowledgment (e.g., HTTP 202 Accepted), while the actual processing continues asynchronously.
 # Operational patterns
 It's about how to run the system than how to build the system.
-
+## Log aggregation patterns
+We need to know operationally what is going on the systems. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM3NDQ3ODUsLTEzNjg2NzgxODEsLT
-EyOTI2NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1
-MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OS
-wyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3
-MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MT
-YsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0
-NDIyXX0=
+eyJoaXN0b3J5IjpbLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMT
+I5MjY2MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUx
+MzEzLC0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LD
+IwNTAxOTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0Mjcx
+MjU4NTIsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNi
+w0NzU1NDYyMjcsMjExMTQ1NzQyMCwxMDk0NDQ5MiwzNDQ2NjQ0
+MjJdfQ==
 -->
