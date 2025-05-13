@@ -85,13 +85,13 @@ Query models may be optimized for specific views or uses, while command (write) 
 ## Asynchronous eventing
 > Long-running transactions or complex workflows that simply cannot fit into a single, blocking API call.
 
- 
+ Service API triggers and event t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTk2Nzc3MSwxODE0NTA0MzEyLC01MT
-A5NzI4OTcsMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLDUxMTU2MDE5
-MCwyMDU2NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5NjI0LC0zNj
-gyNzk1ODgsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMDY1NDA0
-OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQyMCwxMD
-k0NDQ5MiwzNDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5ODM2NTg3
-Ml19
+eyJoaXN0b3J5IjpbLTEyNzI3MDQ1MzQsMTgxNDUwNDMxMiwtNT
+EwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAx
+OTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMz
+Y4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQw
+NDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMT
+A5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4
+NzJdfQ==
 -->
