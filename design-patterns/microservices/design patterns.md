@@ -89,10 +89,10 @@ In a CQRS separates read and write models, each with distinct rules, diverging f
 It's about how to run the system than how to build the system.
 ## Log aggregation patterns
 We need to know operationally what is going on the systems. **Log aggregation is the process of collecting all logs from different services into a centralized location**, and to make that useful, those logs must follow a **shared taxonomy**, which includes:
-* consistentl structured across all services (altought polyglot structuring makes this difficult) e.g., JSON format, clearly separated fields, messagge, service name, etc,
-* 
+* **consistent structure** across all services (altought polyglot structuring makes this difficult) e.g., JSON format, clearly separated fields, messagge, service name, etc,
+* **shared keys and identifiers** that are named the same way and used consistently across all services.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDg1MTUyOCwyMDUzODg1NjQwLC04Nz
+eyJoaXN0b3J5IjpbMTY0Njg5ODk3NSwyMDUzODg1NjQwLC04Nz
 c5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2NjM3MTcsMTgxNDUw
 NDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0MDUyMC
 w1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MTYz
