@@ -64,8 +64,10 @@ It is an **ingress pattern** which purpose is to introduce dedicated edge servic
 These service provide aggregation, consolidation, and complexity isolation tailored to the client, also more efficient scaling, since services scale based only on the clien's load. Supports better flexibility for adding new clients or updating APIs without impacting others and improved security, throught tighter control and isolation (e.g., with OAuth).
 # Data patterns
 
+## Single service database
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MzI5NzkyNCwtMzY4Mjc5NTg4LC0xND
+eyJoaXN0b3J5IjpbMTk3MjAwNzE5NCwtMzY4Mjc5NTg4LC0xND
 I3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3
 MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0Nj
 Y0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5
