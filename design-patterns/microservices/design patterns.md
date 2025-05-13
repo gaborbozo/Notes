@@ -88,13 +88,13 @@ In a CQRS separates read and write models, each with distinct rules, diverging f
 # Operational patterns
 It's about how to run the system than how to build the system.
 ## Log aggregation patterns
-We need to know operationally what is going on the systems. Logs must be consistently structured across all services (altought polyglot structuring makes this difficult). 
+**We need to know operationally what is going on the systems**. Logs must be consistently structured across all services (altought polyglot structuring makes this difficult). 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1Mzg4NTY0MCwtODc3OTQ0MzQ1LC0xMz
-Y4Njc4MTgxLC0xMjkyNjYzNzE3LDE4MTQ1MDQzMTIsLTUxMDk3
-Mjg5NywzNzYxNTEzMTMsLTEwNDY3NDA1MjAsNTExNTYwMTkwLD
-IwNTY3NTc4NzksMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2ODI3
-OTU4OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5MT
-AsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOTQ0
-NDkyXX0=
+eyJoaXN0b3J5IjpbNTk5OTA5Mzg0LDIwNTM4ODU2NDAsLTg3Nz
+k0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2MzcxNywxODE0NTA0
+MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLD
+UxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5
+NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC
+0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1
+NzQyMF19
 -->
