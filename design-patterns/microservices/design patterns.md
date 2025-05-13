@@ -75,13 +75,13 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 ## Shared service database
 > Enterprise construct that is carried over into this distributed model.
 
-**All the data domains exist within a single database instance**, but we can still treat them as separate databases. 
+**All the data domains exist within a single database instance**, but we can still treat them as separate databases. To future-proof systems, structure data using schemas, keyspaces, or similar **logical separations**. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzQzOTYwNiw1MTE1NjAxOTAsMjA1Nj
-c1Nzg3OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4
-LC0xNDI3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Nj
-g5MzQ3MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIs
-MzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MD
-YwNTU5OTEsLTM5OTgwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0
-MDZdfQ==
+eyJoaXN0b3J5IjpbLTEwNDY3NDA1MjAsNTExNTYwMTkwLDIwNT
+Y3NTc4NzksMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2ODI3OTU4
+OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5MTAsNT
+Y4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOTQ0NDky
+LDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcyLC0xOD
+A2MDU1OTkxLC0zOTk4MDg1MTEsLTU1ODQ2NjA2MywxOTc2OTg3
+NDA2XX0=
 -->
