@@ -79,11 +79,14 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 
 Each service should use unique credentials limited to its own schema to ensure proper segmentation. Avoid sharing credentials across logical boundaries to maintain isolation. **Logical isolation prepares systems for future** scaling or migration to multiple database engines with minimal disruption.
 ## Command-query responsibility segregation
-In a CQRS separates read and write models, each with distinct rules, diverging from traditional CRUD patterns.
+In a CQRS separates read and write models, each with distinct rules, diverging from traditional CRUD patterns. 
+
+Query models may be optimized for specific views or uses, while command (write) models encapsulate behaviors and business logic. This divergence introduces eventual consistency, where data written isn't immediately available for reading
+
 
 ## Asynchronous eventing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzIxMjI1OSwtNTEwOTcyODk3LDM3Nj
+eyJoaXN0b3J5IjpbMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3Nj
 E1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3
 OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xND
 I3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3
