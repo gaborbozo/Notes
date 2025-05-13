@@ -69,12 +69,14 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 
 > As load on a single service increases, the associated use of the database will also increase. This can cause you to size the database based on single-service peak needs when the entire system is underutilized.
 
-Each data domain get its own dedicated data store. Caveat here is that if the domain also is included in an atomic transaction, we have to be a little bit less fine grained. 
+Each data domain get its own dedicated data store. Caveat here is that if the domain also is included in an atomic transaction, we have to be a little bit less fine grained.
+
+As the service scales, the data store itself also scales, thus 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjc5NzQ3MTksMjA1MDE5MTk5NSwyNT
-E2Mzk2MjQsLTM2ODI3OTU4OCwtMTQyNzEyNTg1Miw5Njg2Mjcy
-NDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMT
-ExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcx
-LC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1MTEsLT
-U1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ==
+eyJoaXN0b3J5IjpbLTk1ODk3MjQ0MywyMDUwMTkxOTk1LDI1MT
+YzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0
+MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMT
+E0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEs
+LTEzOTgzNjU4NzIsLTE4MDYwNTU5OTEsLTM5OTgwODUxMSwtNT
+U4NDY2MDYzLDE5NzY5ODc0MDYsMTU0MzA4Nzg0OV19
 -->
