@@ -62,11 +62,13 @@ It is an **ingress pattern** which purpose is to introduce dedicated edge servic
 > Though gateways simplify centralized maintenance, edge services offer greater agility and isolation, especially useful in mobile or high-variation client environments.
 
 These service provide aggregation, consolidation, and complexity isolation tailored to the client, also more efficient scaling, since services scale based only on the clien's load. Supports better flexibility for adding new clients or updating APIs without impacting others and improved security, throught tighter control and isolation (e.g., with OAuth).
+# Data patterns
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODI3OTU4OCwtMTQyNzEyNTg1Miw5Nj
-g2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIy
-NywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5Nz
-QyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1
-MTEsLTU1ODQ2NjA2MywxOTc2OTg3NDA2LDE1NDMwODc4NDldfQ
-==
+eyJoaXN0b3J5IjpbLTc2MzI5NzkyNCwtMzY4Mjc5NTg4LC0xND
+I3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3
+MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0Nj
+Y0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5
+OTEsLTM5OTgwODUxMSwtNTU4NDY2MDYzLDE5NzY5ODc0MDYsMT
+U0MzA4Nzg0OV19
 -->
