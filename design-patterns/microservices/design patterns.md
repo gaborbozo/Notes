@@ -83,12 +83,15 @@ In a CQRS separates read and write models, each with distinct rules, diverging f
 
 Query models may be optimized for specific views or uses, while command (write) models encapsulate behaviors and business logic. This divergence introduces eventual consistency, where data written isn't immediately available for reading
 ## Asynchronous eventing
+> Long-running transactions or complex workflows that simply cannot fit into a single, blocking API call.
+
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NjMxMTMyLDE4MTQ1MDQzMTIsLTUxMD
-k3Mjg5NywzNzYxNTEzMTMsLTEwNDY3NDA1MjAsNTExNTYwMTkw
-LDIwNTY3NTc4NzksMjA1MDE5MTk5NSwyNTE2Mzk2MjQsLTM2OD
-I3OTU4OCwtMTQyNzEyNTg1Miw5Njg2MjcyNDIsLTIwNjU0MDQ5
-MTAsNTY4OTM0NzE2LDQ3NTU0NjIyNywyMTExNDU3NDIwLDEwOT
-Q0NDkyLDM0NDY2NDQyMiwyMDQ5NzQyNjcxLC0xMzk4MzY1ODcy
-XX0=
+eyJoaXN0b3J5IjpbMTYzNTk2Nzc3MSwxODE0NTA0MzEyLC01MT
+A5NzI4OTcsMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLDUxMTU2MDE5
+MCwyMDU2NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5NjI0LC0zNj
+gyNzk1ODgsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMDY1NDA0
+OTEwLDU2ODkzNDcxNiw0NzU1NDYyMjcsMjExMTQ1NzQyMCwxMD
+k0NDQ5MiwzNDQ2NjQ0MjIsMjA0OTc0MjY3MSwtMTM5ODM2NTg3
+Ml19
 -->
