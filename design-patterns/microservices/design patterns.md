@@ -78,16 +78,16 @@ These service provide aggregation, consolidation, and complexity isolation tailo
 **All the data domains exist within a single database instance**, but we can still treat them as separate databases. To future-proof systems, structure data using schemas, keyspaces, or similar **logical separations**. 
 
 Each service should use unique credentials limited to its own schema to ensure proper segmentation. Avoid sharing credentials across logical boundaries to maintain isolation. **Logical isolation prepares systems for future** scaling or migration to multiple database engines with minimal disruption.
-## Command query responsibility segregation
-In a CQRS model, query interfaces may transform and aggregate the schema to represent the model in a very specific use. 
+## Command-query responsibility segregation
+In a CQRS separates read and write models, each with distinct rules, diverging from traditional CRUD patterns.
 
 ## Asynchronous eventing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMDk3Mjg5NywzNzYxNTEzMTMsLTEwND
-Y3NDA1MjAsNTExNTYwMTkwLDIwNTY3NTc4NzksMjA1MDE5MTk5
-NSwyNTE2Mzk2MjQsLTM2ODI3OTU4OCwtMTQyNzEyNTg1Miw5Nj
-g2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0NjIy
-NywyMTExNDU3NDIwLDEwOTQ0NDkyLDM0NDY2NDQyMiwyMDQ5Nz
-QyNjcxLC0xMzk4MzY1ODcyLC0xODA2MDU1OTkxLC0zOTk4MDg1
-MTFdfQ==
+eyJoaXN0b3J5IjpbLTIzNzIxMjI1OSwtNTEwOTcyODk3LDM3Nj
+E1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3
+OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xND
+I3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3
+MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0Nj
+Y0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4NzIsLTE4MDYwNTU5
+OTFdfQ==
 -->
