@@ -63,7 +63,6 @@ It is an **ingress pattern** which purpose is to introduce dedicated edge servic
 
 These service provide aggregation, consolidation, and complexity isolation tailored to the client, also more efficient scaling, since services scale based only on the clien's load. Supports better flexibility for adding new clients or updating APIs without impacting others and improved security, throught tighter control and isolation (e.g., with OAuth).
 # Data patterns
-
 ## Single-service single-database
 > In a microservices architecture, the service scalability needs should be proportional to the database's scaling needs.
 
@@ -85,13 +84,16 @@ In a CQRS separates read and write models, each with distinct rules, diverging f
 ## Asynchronous eventing
 > Long-running transactions or complex workflows that simply cannot fit into a single, blocking API call.
 
-**Handles processes that can’t or shouldn’t happen in real time**. Begins with a service API that triggers an event, which then cascades through the system behind the scenes. The client typically receives an immediate acknowledgment (e.g., HTTP 202 Accepted), while the actual processing continues asynchronously. 
+**Handles processes that can’t or shouldn’t happen in real time**. Begins with a service API that triggers an event, which then cascades through the system behind the scenes. The client typically receives an immediate acknowledgment (e.g., HTTP 202 Accepted), while the actual processing continues asynchronously.
+# Operational patterns
+It's about how to run the system than how to build the system.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg2NzgxODEsLTEyOTI2NjM3MTcsMT
-gxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0
-MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LD
-I1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYy
-NzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LD
-IxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2
-NzFdfQ==
+eyJoaXN0b3J5IjpbLTEyOTM3NDQ3ODUsLTEzNjg2NzgxODEsLT
+EyOTI2NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1
+MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OS
+wyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3
+MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MT
+YsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0
+NDIyXX0=
 -->
