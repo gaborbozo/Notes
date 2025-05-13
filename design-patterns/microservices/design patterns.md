@@ -81,17 +81,17 @@ Each service should use unique credentials limited to its own schema to ensure p
 ## Command-query responsibility segregation
 In a CQRS separates read and write models, each with distinct rules, diverging from traditional CRUD patterns. 
 
-Query models may be optimized for specific views or uses, while command (write) models encapsulate behaviors and business logic. This divergence introduces eventual consistency, where data written isn't immediately available for reading
+**Query models may be optimized for specific views or uses, while command (write) models encapsulate behaviors and business logic**. This divergence introduces eventual consistency, where data written isn't immediately available for reading
 ## Asynchronous eventing
 > Long-running transactions or complex workflows that simply cannot fit into a single, blocking API call.
 
 **Handles processes that can’t or shouldn’t happen in real time**. Begins with a service API that triggers an event, which then cascades through the system behind the scenes. The client typically receives an immediate acknowledgment (e.g., HTTP 202 Accepted), while the actual processing continues asynchronously. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTI2NjM3MTcsMTgxNDUwNDMxMiwtNT
-EwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAx
-OTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMz
-Y4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQw
-NDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMTE0NTc0MjAsMT
-A5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2NzEsLTEzOTgzNjU4
-NzJdfQ==
+eyJoaXN0b3J5IjpbLTEzNjg2NzgxODEsLTEyOTI2NjM3MTcsMT
+gxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0
+MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LD
+I1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYy
+NzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LD
+IxMTE0NTc0MjAsMTA5NDQ0OTIsMzQ0NjY0NDIyLDIwNDk3NDI2
+NzFdfQ==
 -->
