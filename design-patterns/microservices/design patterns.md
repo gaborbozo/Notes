@@ -92,10 +92,13 @@ We need to know operationally what is going on the systems. **Log aggregation is
 * **consistent structure** across all services (altought polyglot structuring makes this difficult) e.g., JSON format, clearly separated fields, messagge, service name, etc,
 * **shared keys and identifiers** that are named the same way and used consistently across all services.
 ## Metrics aggregation patterns
-Unlike logs that require developers to structure messages, metrics mainly need instrumentation and offer a system-wide view with service-level granularity. Similar to log aggregation metrics must follow a share
+Unlike logs that require developers to structure messages, metrics mainly need instrumentation and offer a system-wide view with service-level granularity. Similar to log aggregation metrics must follow a **shared taxonomy**, which includes:
+* **aligned log and metric keys**,
+* leverage **standard libraries and shipping mechanisms**,
+* display metrics 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjc3MzY2NSwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbLTIxNzQ5NzU5OCwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
