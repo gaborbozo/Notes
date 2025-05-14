@@ -129,10 +129,10 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 2. **Discovery**: Clients query the registry to find the URI of services that expose the required behavior.
 3. **Invocation**: The client uses the discovered URI instead of relying on static configuration.
 ## Continous delivery
-
+Process by which constantly delivering new code to production with full or nearly full automation. Concepts is to take the previously built artifacts and move them trh 
 ## Documentation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzM4NzkzMSwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbLTg3OTgzNzk0NSwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
