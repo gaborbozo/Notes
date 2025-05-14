@@ -113,14 +113,18 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 
 * Improves operational visibility and troubleshooting.
 * Allows to change behavior without redeploying code.
-* Simplifies **on-call diagnosis** by keeping configuration accessible and consistent.
+* Simplifies on-call diagnosis by keeping configuration accessible and consistent.
 
+-   **Use platform and framework support**: Leverage tools like **Kubernetes ConfigMaps/Secrets** or **Spring’s configuration models**.
+-   Ensure easy discoverability and editability of environment variables and config values.
+-   Consistent naming conventions
+-   Externalize as much as possible
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDEwMDMwMjAsMTY0Njg5ODk3NSwyMD
-UzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2
-NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMy
-wtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUw
-MTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1OD
-UyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1
-NTQ2MjI3XX0=
+eyJoaXN0b3J5IjpbNDA4ODM2MjksMTY0Njg5ODk3NSwyMDUzOD
+g1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2NjM3
+MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMywtMT
+A0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUwMTkx
+OTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLD
+k2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2
+MjI3XX0=
 -->
