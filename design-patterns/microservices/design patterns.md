@@ -102,13 +102,15 @@ Unlike logs that require developers to structure messages, metrics mainly need i
   -   **Inject contextual events** (e.g., deployments, system/user events) into dashboards to correlate with anomalies.
   -   Add **visual traces or markers** at alarm points for quicker identification.
 ## Tracing patterns
-> In mono
+> In monolithic systems from edge to database call was in a single process, however in microservices calls span processes.
+
+Tracing patterns helping regain visibility 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ0MDE4NDIsMTY0Njg5ODk3NSwyMD
-UzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2
-NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMy
-wtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUw
-MTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1OD
-UyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1
-NTQ2MjI3XX0=
+eyJoaXN0b3J5IjpbMTk3NDEwMjg2NywxNjQ2ODk4OTc1LDIwNT
+M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
+MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
+0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
+OTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NT
+IsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1
+NDYyMjddfQ==
 -->
