@@ -129,15 +129,21 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 2. **Discovery**: Clients query the registry to find the URI of services that expose the required behavior.
 3. **Invocation**: The client uses the discovered URI instead of relying on static configuration.
 ## Continous delivery
-Process by which constantly delivering new code to production with full or nearly full automation. Concepts is to take the previously built artifacts and move them through non-production environments all the way to production using automated gates.  
+Process by which constantly delivering new code to production with full or nearly full automation. Concepts is to take the previously built artifacts and move them through non-production environments all the way to production using automated gates.
 
+Key strategies include:
+* **Triggering deployments** after publishing artifacts with passing unit tests. 
+* **Automated integration tests** deployed with the code to test internal APIs. 
+* **Security testing** using both third-party penetration tools and internal stress tests focused on vulnerabilities (e.g., OWASP Top 10).
+* **User Acceptance Testing (UAT)** with external frameworks, tailored to frequently changing UIs.
+* **Smoke testing in production** via cron jobs to ensure core functionality remains stable.
 ## Documentation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyOTQ4MTAwLDE2NDY4OTg5NzUsMjA1Mz
-g4NTY0MCwtODc3OTQ0MzQ1LC0xMzY4Njc4MTgxLC0xMjkyNjYz
-NzE3LDE4MTQ1MDQzMTIsLTUxMDk3Mjg5NywzNzYxNTEzMTMsLT
-EwNDY3NDA1MjAsNTExNTYwMTkwLDIwNTY3NTc4NzksMjA1MDE5
-MTk5NSwyNTE2Mzk2MjQsLTM2ODI3OTU4OCwtMTQyNzEyNTg1Mi
-w5Njg2MjcyNDIsLTIwNjU0MDQ5MTAsNTY4OTM0NzE2LDQ3NTU0
-NjIyN119
+eyJoaXN0b3J5IjpbLTgyMjU0NDE0NiwxNjQ2ODk4OTc1LDIwNT
+M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
+MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
+0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
+OTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NT
+IsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1
+NDYyMjddfQ==
 -->
