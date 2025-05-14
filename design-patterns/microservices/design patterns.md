@@ -91,12 +91,15 @@ It's about how to run the system than how to build the system.
 We need to know operationally what is going on the systems. **Log aggregation is the process of collecting all logs from different services into a centralized location**, and to make that useful, those logs must follow a **shared taxonomy**, which includes:
 * **consistent structure** across all services (altought polyglot structuring makes this difficult) e.g., JSON format, clearly separated fields, messagge, service name, etc,
 * **shared keys and identifiers** that are named the same way and used consistently across all services.
+## Metrics aggregation patterns
+Unlike logs that require developers to structure messages, metrics mainly need instrumentation and offer a system-wide view with service-level granularity. Similar to log aggregation metrics must follow a share
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Njg5ODk3NSwyMDUzODg1NjQwLC04Nz
-c5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2NjM3MTcsMTgxNDUw
-NDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMywtMTA0Njc0MDUyMC
-w1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUwMTkxOTk1LDI1MTYz
-OTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1ODUyLDk2ODYyNzI0Mi
-wtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1NTQ2MjI3LDIxMTE0
-NTc0MjBdfQ==
+eyJoaXN0b3J5IjpbLTYwNjc3MzY2NSwxNjQ2ODk4OTc1LDIwNT
+M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
+MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
+0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
+OTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NT
+IsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1
+NDYyMjddfQ==
 -->
