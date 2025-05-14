@@ -103,8 +103,13 @@ Unlike logs that require developers to structure messages, metrics mainly need i
   -   Add **visual traces or markers** at alarm points for quicker identification.
 ## Tracing patterns
 Tracing patterns helping regain visibility into distributed call flows, which is otherwise lost compared to monolithic systems.
+* **Inject trace IDs** at the edge (e.g., browser, API gateway, ETL job) and propagate through every internal service and database call. 
+* **Embed trace IDs in logs** to correlate metrics, logs, and traces creating a full observability picture.
+* Use **open standards** (e.g., OpenTelemetry) instead of homegrown solutions to avoid complexity and benefit from existing tools and integrations. 
+* **Leverage APM tools** to visualize call stacks and identify performance bottlenecks or failed services during outages.
+* Ensure **instrumentation** is done consistently across all services so trace continuity is preserved.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTExMjkwNTEsMTY0Njg5ODk3NSwyMD
+eyJoaXN0b3J5IjpbLTIwMDc0ODQ4NzYsMTY0Njg5ODk3NSwyMD
 UzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2
 NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMy
 wtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUw
