@@ -95,10 +95,15 @@ We need to know operationally what is going on the systems. **Log aggregation is
 Unlike logs that require developers to structure messages, metrics mainly need instrumentation and offer a system-wide view with service-level granularity. Similar to log aggregation metrics must follow a **shared taxonomy**, which includes:
 * **aligned log and metric keys**,
 * leverage **standard libraries and shipping mechanisms**,
-* display metrics 
+* display metrics through **dashboards**, which are essential for operations, especially during on-call incidents.
+ -   **High-level dashboards** for system health overview.
+-   **Service-specific detailed dashboards** for deep dives when issues arise.
+-   Include **links to log queries** to aid quick troubleshooting during alerts.
+-   **Inject contextual events** (e.g., deployments, system/user events) into dashboards to correlate with anomalies.
+-   Add **visual traces or markers** at alarm points for quicker identification.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzQ5NzU5OCwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbMTU1MTI2MjU4MSwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
