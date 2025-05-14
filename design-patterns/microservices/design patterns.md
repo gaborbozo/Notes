@@ -109,13 +109,18 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 * **Leverage APM tools** to visualize call stacks and identify performance bottlenecks or failed services during outages.
 * Ensure **instrumentation** is done consistently across all services so trace continuity is preserved.
 ## External configuration
-> Externalized configuration isn't mandatory in microservices like it is in cloud-native systems.
+> Externalized configuration isn't mandatory in microservices like it is in cloud-native systems, but it provides significant operational advantages, especially when dealing with scaling, dynamic service movement, and incident response.
+
+* Improves operational visibility and troubleshooting.
+* Allows to change behavior without redeploying code.
+* Simplifies **on-call diagnosis** by keeping configuration accessible and consistent.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjk2OTUwMywxNjQ2ODk4OTc1LDIwNT
-M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
-MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
-0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
-OTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NT
-IsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1
-NDYyMjddfQ==
+eyJoaXN0b3J5IjpbLTE5MDEwMDMwMjAsMTY0Njg5ODk3NSwyMD
+UzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2
+NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMy
+wtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUw
+MTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC0xNDI3MTI1OD
+UyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5MzQ3MTYsNDc1
+NTQ2MjI3XX0=
 -->
