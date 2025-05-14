@@ -108,8 +108,10 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 * Use **open standards** (e.g., OpenTelemetry) instead of homegrown solutions to avoid complexity and benefit from existing tools and integrations. 
 * **Leverage APM tools** to visualize call stacks and identify performance bottlenecks or failed services during outages.
 * Ensure **instrumentation** is done consistently across all services so trace continuity is preserved.
+## External configuration
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc0ODQ4NzYsMTY0Njg5ODk3NSwyMD
+eyJoaXN0b3J5IjpbLTE5MTI0NTA0MzMsMTY0Njg5ODk3NSwyMD
 UzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2NzgxODEsLTEyOTI2
 NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LDM3NjE1MTMxMy
 wtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1Nzg3OSwyMDUw
