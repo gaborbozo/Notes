@@ -138,15 +138,18 @@ Key strategies include:
 * **User Acceptance Testing (UAT)** with external frameworks, tailored to frequently changing UIs.
 * **Smoke testing in production** via cron jobs to ensure core functionality remains stable.
 ## Documentation
-
+Use tools native to service definition, such as OpenAPI for RESTful services.
 
 Two-pronged documentation strategy includes each service serves its own documentation at a known, consistent endpoint while a central repository collects and publishes all service docs, ideally via automation using service discovery.
+
+* Include API usage examples, team names, and contact info in the docs to enhance usability and support. 
+* Treat documentation updates as part of the code review process, ensuring they stay in sync with the APIs.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQyODQ3MTEsMTg0MjY0Mzg2OCwxNj
-Q2ODk4OTc1LDIwNTM4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3
-ODE4MSwtMTI5MjY2MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OT
-csMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2
-NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1OD
-gsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2
-ODkzNDcxNl19
+eyJoaXN0b3J5IjpbMzczMDY4ODA3LDE4NDI2NDM4NjgsMTY0Nj
+g5ODk3NSwyMDUzODg1NjQwLC04Nzc5NDQzNDUsLTEzNjg2Nzgx
+ODEsLTEyOTI2NjM3MTcsMTgxNDUwNDMxMiwtNTEwOTcyODk3LD
+M3NjE1MTMxMywtMTA0Njc0MDUyMCw1MTE1NjAxOTAsMjA1Njc1
+Nzg3OSwyMDUwMTkxOTk1LDI1MTYzOTYyNCwtMzY4Mjc5NTg4LC
+0xNDI3MTI1ODUyLDk2ODYyNzI0MiwtMjA2NTQwNDkxMCw1Njg5
+MzQ3MTZdfQ==
 -->
