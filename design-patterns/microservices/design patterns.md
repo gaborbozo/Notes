@@ -139,12 +139,14 @@ Key strategies include:
 * **Smoke testing in production** via cron jobs to ensure core functionality remains stable.
 ## Documentation
 
+
+Two-pronged documentation strategy includes each service serves its own documentation at a known, consistent endpoint while a central repository collects and publishes all service docs, ideally via automation using service discovery.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjY0Mzg2OCwxNjQ2ODk4OTc1LDIwNT
-M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
-MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
-0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
-OTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1ODgsLTE0MjcxMjU4NT
-IsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2ODkzNDcxNiw0NzU1
-NDYyMjddfQ==
+eyJoaXN0b3J5IjpbLTE4MTQyODQ3MTEsMTg0MjY0Mzg2OCwxNj
+Q2ODk4OTc1LDIwNTM4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3
+ODE4MSwtMTI5MjY2MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OT
+csMzc2MTUxMzEzLC0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2
+NzU3ODc5LDIwNTAxOTE5OTUsMjUxNjM5NjI0LC0zNjgyNzk1OD
+gsLTE0MjcxMjU4NTIsOTY4NjI3MjQyLC0yMDY1NDA0OTEwLDU2
+ODkzNDcxNl19
 -->
