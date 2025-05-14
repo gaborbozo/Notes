@@ -120,9 +120,14 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 -   Consistent naming conventions.
 -   Externalize as much as possible.
 ## Service discovery
+**Central registry** (or discovery service) keeps track of:
+* which services are currently running,
+* what behaviors or APIs they expose,
+* where (URI) they can be accessed.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDQyMjQ5MiwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbMTE4MzUxOTEyNiwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
