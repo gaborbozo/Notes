@@ -130,8 +130,9 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 3. **Invocation**: The client uses the discovered URI instead of relying on static configuration.
 ## Continous delivery
 
+## Documentation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTg0MDM2NywxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbLTk3MzM4NzkzMSwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
