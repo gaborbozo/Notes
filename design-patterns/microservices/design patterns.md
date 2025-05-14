@@ -125,9 +125,13 @@ Tracing patterns helping regain visibility into distributed call flows, which is
 * what behaviors or APIs they expose,
 * where (URI) they can be accessed.
 
+1. **Registration**: Services register themselves and advertise what they provide (e.g., `foo` is available at `bar.com/foo`).
+2. **Discovery**: Clients query the registry to find the URI of services that expose the required behavior.
+3. **Invocation**: The client uses the discovered URI instead of relying on static configuration.
+## Continous delivery
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzUxOTEyNiwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbLTE2NTg0MDM2NywxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
