@@ -138,8 +138,9 @@ Key strategies include:
 * **User Acceptance Testing (UAT)** with external frameworks, tailored to frequently changing UIs.
 * **Smoke testing in production** via cron jobs to ensure core functionality remains stable.
 ## Documentation
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjU0NDE0NiwxNjQ2ODk4OTc1LDIwNT
+eyJoaXN0b3J5IjpbMTg0MjY0Mzg2OCwxNjQ2ODk4OTc1LDIwNT
 M4ODU2NDAsLTg3Nzk0NDM0NSwtMTM2ODY3ODE4MSwtMTI5MjY2
 MzcxNywxODE0NTA0MzEyLC01MTA5NzI4OTcsMzc2MTUxMzEzLC
 0xMDQ2NzQwNTIwLDUxMTU2MDE5MCwyMDU2NzU3ODc5LDIwNTAx
