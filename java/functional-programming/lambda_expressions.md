@@ -10,18 +10,17 @@ public interface Printable(){
 Printable lambdaPrintable = () -> {
 		System.out.println("Hello World");
 	};
-
 lambdaPrintable.print();
-```
-```java
+
 // One single expression implementation
 Printable lambdaPrintable = () -> System.out.println("Hello World"); 
-```
-```java
+
+
 public interface PrintableParameter(){
 	void print(String string);
 }
 
+PrintableParameter lambdaPrintableParameter = (String s) -> System.out.println(s);
 PrintableParameter lambdaPrintableParameter = (s) -> System.out.println(s);
 
 // In case of having only one parameter brackets can be left
@@ -170,5 +169,5 @@ System.out.println(concat.apply("Hello, ", "world!"));
 ```
 It is also provides some default methods such as `andThen()`  which allow chainhg of functions.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTkwNTMyOF19
+eyJoaXN0b3J5IjpbMzI1OTI1NDMxLC00OTU5MDUzMjhdfQ==
 -->
