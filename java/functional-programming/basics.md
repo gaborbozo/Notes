@@ -10,9 +10,9 @@ int b = 42;
 
 new Thread(() -> { System.out.println(a + b); }
 ```
-This is because lambda expressions may outlive the method in which they are defined. Java wants to avoid unexpected behavior caused by changing variables in closures. This restriction ensures thread safety and consistency.
+**This is because lambda expressions may outlive the method in which they are defined**. Java wants to avoid unexpected behavior caused by changing variables in closures. **This restriction ensures thread safety and consistency**.
 Both **inner classes** and **lambda expressions** can close over variables.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTc0NTU1NTAsMTU2ODIyMjczMSw3Mj
-k3ODcwMDFdfQ==
+eyJoaXN0b3J5IjpbLTUwNTkyODUxMCwtMTc1NzQ1NTU1MCwxNT
+Y4MjIyNzMxLDcyOTc4NzAwMV19
 -->
