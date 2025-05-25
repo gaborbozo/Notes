@@ -81,6 +81,11 @@ Can be used for system-to-system communications in standalone mode or on behalf 
 **Authorization code grant** is most common.
 **Implicit grant** is common in web apps and mobile apps.
 **Client credentials grant** is useful in system-to-system communications. Each system gets a client ID and a secret that is uses to get an access token and then do its work within the system based on the scopes.
+```java
+// Provides native support for Okta, Google, Github, ...
+// Client side OAuth integration
+enum CommonOAuth2Provider
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTgzNTAxMV19
+eyJoaXN0b3J5IjpbNDU0ODIyMzYwXX0=
 -->
