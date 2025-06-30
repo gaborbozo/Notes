@@ -44,7 +44,7 @@ Clients interact with a unified interface, not with individual microservices dir
 ## Asynchronous communication
 **Strategy for dealing with reducing latency ** on a microservices based system is to not rely on a purely synchronous communication model (such as _REST API_-s).
 
-Most often is is reffered to event-driven microservices as a way to support eventual consistency of the data.
+Most often it is reffered to **event-driven microservices** as a way to support **eventual consistency** of the data.
 > For example a message service put data into an asynchronous message broker (message queue) or a temporary data store, and then drive events from this state change.
 > Another example is a stream data platform, where events are written to a central message broker. These events then trigger listener operations that take action on the data if it applies to them, events such as data formatting, downstream event, etc.
 
@@ -104,6 +104,6 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODgyMTE4OSwxNTgzOTY3MDczLDE3Nz
+eyJoaXN0b3J5IjpbMTE1MDMwNDkyMiwxNTgzOTY3MDczLDE3Nz
 gwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5NjQ2XX0=
 -->
