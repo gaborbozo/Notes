@@ -17,8 +17,8 @@ It embraces the **concepts of protocol aware** so traditionally it's using _REST
 In a **pure microservice architecture** each unit of work can be called from any other unit of work.
 Because of distribution, a microservice is scalable under heavy load with not just vertiacal scaling, but with **horizontal scaling** as well. 
 ### The cost to pay
-Contrary to a monolith its more complex and costfull. 
-Network's distribution tax comes from thread blocking between services.
+Contrary to a monolith its more **complex** and **costfull**. 
+**Network's distribution tax** comes from thread blocking between services.
 With the increase of services it gets less reliable, f.e. if one service is faulty, some other services will be too.
 > If a system cannot work in a partial state of availability, it may not be developed with microservice arhitecture.
 
@@ -104,5 +104,5 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTcyNTAyMyw2NzEzOTk2NDZdfQ==
+eyJoaXN0b3J5IjpbLTE2MTkzMjkwNTUsNjcxMzk5NjQ2XX0=
 -->
