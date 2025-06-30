@@ -42,7 +42,7 @@ Forwarding requests without altering them - transformation should be handled els
 
 Clients interact with a unified interface, not with individual microservices directly, this decouples clients from internal changes, which makes it easier to scale services independently and handle infrastructure changes (like changing IPs, ports, or data centers) without impacting clients.
 ## Asynchronous communication
-Strategy for dealing with reducing latency on a microservices based system is to not rely on a purely synchronous communication model (such as _REST API_-s).
+**Strategy for dealing with reducing latency ** on a microservices based system is to not rely on a purely synchronous communication model (such as _REST API_-s).
 
 Most often is is reffered to event-driven microservices as a way to support eventual consistency of the data.
 > For example a message service put data into an asynchronous message broker (message queue) or a temporary data store, and then drive events from this state change.
@@ -104,6 +104,6 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4Mzk2NzA3MywxNzc4MDk4MjA5LC0xNj
-E5MzI5MDU1LDY3MTM5OTY0Nl19
+eyJoaXN0b3J5IjpbLTg0ODgyMTE4OSwxNTgzOTY3MDczLDE3Nz
+gwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5NjQ2XX0=
 -->
