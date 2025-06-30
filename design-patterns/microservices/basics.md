@@ -5,17 +5,17 @@ After this there was a shift to service-based architectures (_SOA_), which decom
 * _SOAP_ which makes a lot of compromises that are contrary to how _HTTP_ works, f.e. ignores _HTTP_ response codes except _OK (200)_ and _Internal Server Error (500)_ - the actual error is burried inside the `<soap:Fault>` so the client can’t just use the HTTP status code.
 * the aggregation layer got tightly coupled to domain-, data access- and presentation layer logics.
 
-Microservices also have their of set of problems, but they do however <b>have the promise of a more agile framework that can be extended into a cloud native world</b> much easire than its peers before.
+Microservices also have their of set of problems, but they do however **have the promise of a more agile framework that can be extended into a cloud native world** much easire than its peers before.
 ## Microservices and cloud-native
 Cloud native includes patterns for designing systems to run in a cloud-based infrastrucutre. Cloud computing is a pattern of globally distributing systems to provide increased uptime, increased scalability and increased distribution. 
 
 Microservices tends to fit good in this concept, however in reality they differ, but in generally every microservice based application is aimed to a cloud native platform.
 # Concept of microservices 
-Using the concepts of _decomposition_, breaking a software problem into smaller pieces.
-It embraces the concepts of protocol aware so traditionally it's using _REST_ for communicating.
+Using the **concepts of _decomposition_**, breaking a software problem into smaller pieces.
+It embraces the **concepts of protocol aware** so traditionally it's using _REST_ for communicating.
 **Polyglot** development support - multiple programming languages in the same enviroment.
-In a **pure** microservice architecture each unit of work can be called from any other unit of work.
-Because of distribution a microservice is scalable under heavy load with not just vertiacal scaling, but with horizontal scaling as well. 
+In a **pure microservice architecture** each unit of work can be called from any other unit of work.
+Because of distribution, a microservice is scalable under heavy load with not just vertiacal scaling, but with **horizontal scaling** as well. 
 ### The cost to pay
 Contrary to a monolith its more complex and costfull. 
 Network's distribution tax comes from thread blocking between services.
@@ -104,5 +104,5 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MjExNTEzNCw2NzEzOTk2NDZdfQ==
+eyJoaXN0b3J5IjpbLTExMTcyNTAyMyw2NzEzOTk2NDZdfQ==
 -->
