@@ -72,9 +72,9 @@ Use non-blocking code where appropriate.
 Pick and enforce coding standards across all services.
 Standardization eases team collaboration and resource shifting.
 7. **Asynchronous by default**
-Design services as asynchronous unless synchrony is proven necessary.
+Design services as asynchronous **unless synchrony is proven necessary**.
 Helps reduce system latency and error rates, and builds async proficiency.
-8. Focus on Operations and Infrastructure
+8. **Focus on Operations and Infrastructure**
 Emphasize the supporting processes and environment, not just the code itself.
 # Hybrid architectures for microservices adoption
 ## Hierarchical Service Model
@@ -104,7 +104,7 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjA0MzM2MzgsMTE1MDMwNDkyMiwxNT
-gzOTY3MDczLDE3NzgwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5
-NjQ2XX0=
+eyJoaXN0b3J5IjpbNTQzNDIzNjIsMTE1MDMwNDkyMiwxNTgzOT
+Y3MDczLDE3NzgwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5NjQ2
+XX0=
 -->
