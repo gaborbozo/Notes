@@ -79,10 +79,10 @@ Emphasize the supporting processes and environment, not just the code itself.
 # Hybrid architectures for microservices adoption
 ## Hierarchical Service Model
 Based on the _N-tier_ architecture.
-Services are organized into distinct layers or classes like
-- data services expose domain-specific logic,
-- business process services define high-level workflows,
-- gateway services manage external dependencies,
+**Services are organized into distinct layers or classes** like
+- **data** services expose domain-specific logic,
+- **business process** services define high-level workflows,
+- **gateway** services manage external dependencies,
 - edge services expose functionality externally.
 
 Strict consumption rules are defined between layers (e.g., no data service calls another directly).
@@ -96,7 +96,7 @@ Cons:
 - May introduce artificial complexity and latency.
 ## Service-Based Architecture
 Similar to SOA (Service-Oriented Architecture).
-Services are carved out without splitting the database.
+**Services are carved out without splitting the database**.
 Pros:
 - Easier transition to microservices.
 - Gains some agility benefits.
@@ -104,6 +104,7 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MDMwNDkyMiwxNTgzOTY3MDczLDE3Nz
-gwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5NjQ2XX0=
+eyJoaXN0b3J5IjpbLTMzNzc5ODg4NiwxMTUwMzA0OTIyLDE1OD
+M5NjcwNzMsMTc3ODA5ODIwOSwtMTYxOTMyOTA1NSw2NzEzOTk2
+NDZdfQ==
 -->
