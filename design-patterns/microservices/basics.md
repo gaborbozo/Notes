@@ -5,7 +5,7 @@ After this there was a shift to service-based architectures (_SOA_), which decom
 * _SOAP_ which makes a lot of compromises that are contrary to how _HTTP_ works, f.e. ignores _HTTP_ response codes except _OK (200)_ and _Internal Server Error (500)_ - the actual error is burried inside the `<soap:Fault>` so the client can’t just use the HTTP status code.
 * the aggregation layer got tightly coupled to domain-, data access- and presentation layer logics.
 
-Microservices also have their of set of problems, but they do however <u>have the promise of a more agile framework that can be extended into a cloud native world</u> much easire than its peers before.
+Microservices also have their of set of problems, but they do however <b>have the promise of a more agile framework that can be extended into a cloud native world</b> much easire than its peers before.
 ## Microservices and cloud-native
 Cloud native includes patterns for designing systems to run in a cloud-based infrastrucutre. Cloud computing is a pattern of globally distributing systems to provide increased uptime, increased scalability and increased distribution. 
 
@@ -104,5 +104,5 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjkyMTI2LDY3MTM5OTY0Nl19
+eyJoaXN0b3J5IjpbMTA5MjExNTEzNCw2NzEzOTk2NDZdfQ==
 -->
