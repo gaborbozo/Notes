@@ -1,5 +1,5 @@
 # Microservices history
-Tight coupling of components in monoliths make changes hard, thus they require considerable time to test, build and deploy.
+**Tight coupling of components in monoliths** make changes hard, thus they require considerable time to test, build and deploy.
 
 After this there was a shift to service-based architectures (_SOA_), which decomposed applications into smaller modules. It brought other issues such as
 * _SOAP_ which makes a lot of compromises that are contrary to how _HTTP_ works, f.e. ignores _HTTP_ response codes except _OK (200)_ and _Internal Server Error (500)_ - the actual error is burried inside the `<soap:Fault>` so the client can’t just use the HTTP status code.
@@ -104,5 +104,5 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxMzk5NjQ2XX0=
+eyJoaXN0b3J5IjpbMTU1MjkyMTI2LDY3MTM5OTY0Nl19
 -->
