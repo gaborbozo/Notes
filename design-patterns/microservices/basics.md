@@ -54,24 +54,24 @@ Automated deployment is crucial. Goal is maximal automation to ensure safe, reli
 
 Start small with basic build and deploy automation, and gradually integrate with ticketing, chat, and monitoring systems. Over time, aim for advanced automation, including self-registration and smart routing, to fully realize the benefits of microservices agility.
 # Design considerations
-1. CI/CD first
+1. **CI/CD** first
 Model a sample pipeline and automate critical steps of the SDLC.
-2. Centralized logging, tracing & telemetry
+2. **Centralized logging, tracing & telemetry**
 Common library for logging, tracing, and telemetry.
 Plan early for log aggregation and search mechanisms.
-3. Domain-driven design (DDD)
+3. **Domain-driven design** (DDD)
 Analyze the whole system to define clear service boundaries.
 Use telemetry to inform these boundaries.
-4. Service design strategy
+4. **Service design** strategy
 Decide between dedicated data services vs. integrating data access into business processes.
 Plan for asset transactions vs. eventual consistency.
-5. Latency management
+5. **Latency management**
 Include mechanisms to measure and control latency.
 Use non-blocking code where appropriate.
-6. Standardize stack
+6. **Standardize stack**
 Pick and enforce coding standards across all services.
 Standardization eases team collaboration and resource shifting.
-7. Asynchronous by default
+7. **Asynchronous by default**
 Design services as asynchronous unless synchrony is proven necessary.
 Helps reduce system latency and error rates, and builds async proficiency.
 8. Focus on Operations and Infrastructure
@@ -83,7 +83,7 @@ Based on the _N-tier_ architecture.
 - **data** services expose domain-specific logic,
 - **business process** services define high-level workflows,
 - **gateway** services manage external dependencies,
-- edge services expose functionality externally.
+- **edge** services expose functionality externally.
 
 Strict consumption rules are defined between layers (e.g., no data service calls another directly).
 
@@ -104,7 +104,7 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzc5ODg4NiwxMTUwMzA0OTIyLDE1OD
-M5NjcwNzMsMTc3ODA5ODIwOSwtMTYxOTMyOTA1NSw2NzEzOTk2
-NDZdfQ==
+eyJoaXN0b3J5IjpbLTE4MjA0MzM2MzgsMTE1MDMwNDkyMiwxNT
+gzOTY3MDczLDE3NzgwOTgyMDksLTE2MTkzMjkwNTUsNjcxMzk5
+NjQ2XX0=
 -->
