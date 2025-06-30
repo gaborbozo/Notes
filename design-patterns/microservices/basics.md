@@ -27,9 +27,9 @@ To overcome this issue a solid versioning strategy and contract testing may be h
 Because of the design, every service call is a remote network call, thus there is a connection set up, tear down, and wire latency. **Gridlock** happens when the delay can become unbearable, even by circuit calls. On such pattern is to use a **circuit breaker**. What it does is that if a request takes too long to be processed, a default response is returned. 
 > For example Netflix released Hystrix to support their offerings. If search is down, for instance, the platform should still be able to allow users to view movies.
 ## Bounded context
-The instinct might be to simply split a monolithic system based on data domains, but doing so without deeper analysis can lead to increased latency. It's important to take the time to understand real-world usage and analyze traffic patterns in code.
+The instinct might be to simply split a monolithic system based on data domains, but doing so without deeper analysis can lead to increased latency. It's important to take the time to understand real-world usage and analyze **traffic patterns** in code.
 ## Transactional boundaries
-For this the overall objective is to minimize the cross-domain calls where possible, enforce the needed transaction boundaries. Usually moving to microservices from monolith, the data domain distribution is the last thing to do so.
+For this the overall objective is to **minimize the cross-domain calls** where possible, enforce the needed transaction boundaries. Usually moving to microservices from monolith, the data domain distribution is the last thing to do so.
 
 > Atomicity: All operations in a transaction succeed or none do.
 > Consistency: The database remains in a valid state before and after the transaction.
@@ -104,5 +104,6 @@ Pros:
 Cons:
 - Risk of evolving into a “monolith of monoliths” if service boundaries aren't well-defined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTkzMjkwNTUsNjcxMzk5NjQ2XX0=
+eyJoaXN0b3J5IjpbMTc3ODA5ODIwOSwtMTYxOTMyOTA1NSw2Nz
+EzOTk2NDZdfQ==
 -->
